@@ -4,32 +4,60 @@
   <head>
     <title>A-Y</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="assets/main.css" type="text/css" />
     <style>
-      #content,
-      html,
+
       body {
-        height: 98%;
+     
       }
 
-      #left {
-        float: left;
-        width: 50%;
+      .wrap {
+        display: flex;
+      }
+
+      .wrap {
         background: white;
         border: thin solid black;
         padding: 20px;
-        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
         overflow: scroll;
+        resize: both;
       }
 
-      #right {
-        float: left;
-        width: 50%;
+      .wrap>div:hover {
+        flex: 2;
+      }
+
+      .wrap>div {
+        flex: 1;
+        flex-grow: 100%;
         background: white;
         border: thin solid black;
-        height: 100%;
+        padding: 20px;
+        transition: 0.5s flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        height: 100vh;
         overflow: scroll;
-        background-image: url('congo/LumumbaBrussel1960.jpg')
+        resize: both;
+
+      }
+
+      .webBox {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: thin solid black;
+        background-color: white;
+        resize: both;
+      }
+
+      a{
+
       }
     </style>
 
@@ -37,37 +65,220 @@
 
   <body>
 
-    <!-- <img src="index pics/cat-mouse-1.png"> -->
-    <!-- <h1 class="title">Avery</h1> -->
 
-    <div id="content">
+    <div class="wrap">
+      <div class="left">
 
-      <div id="left">
-        <h2>Exercises</h2>
-        <ol>
-          <li><a href="markup-exercise.html">Typesetting in HTML</a></li>
-        </ol>
 
-        <h2>Projects</h2>
-        <ol>
-          <li><a href="listlinks.html">The list</a></li>
-          <li><a href="project2">The clock</a></li>
-        </ol>
+        <!-- <a href="markup-exercise.html">Typesetting in HTML</a>
+        <br>
+        <a href="website-as.html">Website-As</a>
+
+
+        <a href="listlinks.html">The list</a>
+        <br> -->
+
+
+        <a href="#list1.html">1</a>
+        <br>
+        <a href="#list2.html">2</a>
+        <br>
+        <a href="#list3.html">3</a>
+        <br>
+        <a href="#list4.html">4</a>
+        <br>
+        <a href="#list5.html">5</a>
+        <br>
+
+        <a href="#list1_pt2.html">6</a>
+        <br>
+        <a href="#list2_pt2.html">7</a>
+        <br>
+        <a href="#list3_pt2.html">8</a>
+        <br>
+        <a href="#list4_pt2.html">9</a>
+        <br>
+        <a href="#list5_pt2.html">10</a>
+        <br>
+
+        <a href="#list1_pt3.html">11</a>
+        <br>
+        <a href="#list2_pt3.html">12</a>
+        <br>
+        <a href="#list3_pt3.html">13</a>
+        <br>
+        <a href="#list4_pt3.html">14</a>
+        <br>
+        <a href="#list5_pt3.html">15</a>
+        <br>
+
+        <a href="#list1_pt4.html">16</a>
+        <br>
+        <a href="#list2_pt4.html">17</a>
+        <br>
+        <a href="#list3_pt4.html">18</a>
+        <br>
+        <a href="#list4_pt4.html">19</a>
+        <br>
+        <a href="#list5_pt4.html">20</a>
+        <br>
+
+        <a href="#list1_pt5.html">21</a>
+        <br>
+        <a href="#list2_pt5.html">22</a>
+        <br>
+        <a href="#list3_pt5.html">23</a>
+        <br>
+        <a href="#list4_pt5.html">24</a>
+        <br>
+        <a href="#list5_pt5.html">25</a>
+        <br>
+
       </div>
-      <div id="right">
-        <h2>Exercises</h2>
-        <ol>
-          <li><a href="markup-exercise.html">Typesetting in HTML</a></li>
-        </ol>
 
-        <h2>Projects</h2>
-        <ol>
-          <li><a href="listlinks.html">The list</a></li>
-          <li><a href="project2">The clock</a></li>
-        </ol>
+      <div class="right">
+        <div style="height: 1800px;">
 
+
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list1.html" type="text/html" data="list1.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list1_pt2.html" type="text/html" data="list1_pt2.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list1_pt3.html"type="text/html" data="list1_pt3.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list1_pt4.html" type="text/html" data="list1_pt4.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list2.html" type="text/html" data="list2.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list2_pt2.html" type="text/html" data="list2_pt2.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list2_pt3.html" type="text/html" data="list2_pt3.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list2_pt4.html" type="text/html" data="list2_pt4.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list2_pt5.html" type="text/html" data="list2_pt5.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list3.html" type="text/html" data="list3.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list3_pt2.html" type="text/html" data="list3_pt2.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list3_pt3.html" type="text/html" data="list3_pt3.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list3_pt4.html" type="text/html" data="list3_pt4.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list3_pt5.html" type="text/html" data="list3_pt5.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list4.html" type="text/html" data="list4.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list4_pt2.html" type="text/html" data="list4_pt2.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list4_pt3.html" type="text/html" data="list4_pt3.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list4_pt4.html" type="text/html" data="list4_pt4.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list4_pt5.html" type="text/html" data="list4_pt5.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list5.html" type="text/html" data="list5.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list5_pt2.html" type="text/html" data="list5_pt2.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list5_pt3.html" type="text/html" data="list5_pt3.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list5_pt4.html" type="text/html" data="list5_pt4.html" class="webBox">
+            </object>
+          </div>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="list5_pt5.html" type="text/html" data="list5_pt5.html" class="webBox">
+            </object>
+          </div>
+
+
+        </div>
       </div>
     </div>
+
+
+
+
+    </div>
+
+
 
 
 
