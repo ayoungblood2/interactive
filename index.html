@@ -94,7 +94,7 @@
 
       #top, #btm{
        
-        position: relative;
+        position: sticky;
         top:0;
         left: 0;
         padding: 20px;
@@ -104,6 +104,16 @@
         line-height: 2;
         font-size: 1em;
       }
+
+      .webBox::-webkit-scrollbar {
+            display: none;
+        }
+        .wrap::-webkit-scrollbar {
+            display: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
 
     </style>
 
