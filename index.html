@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="assets/main.css" type="text/css" />
     <style>
-
       body {
-     
+        padding: 20px;
       }
 
       .wrap {
         display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%
       }
 
       .wrap {
         background: white;
-        border: thin solid black;
+        border: thin solid blue;
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
@@ -27,14 +29,13 @@
       }
 
       .wrap>div:hover {
-        flex: 2;
+        flex: 3;
       }
 
       .wrap>div {
         flex: 1;
-        flex-grow: 100%;
         background: white;
-        border: thin solid black;
+        border: thin solid blue;
         padding: 20px;
         transition: 0.5s flex;
         font-family: Arial, Helvetica, sans-serif;
@@ -48,17 +49,43 @@
       .webBox {
         width: 100%;
         height: 100%;
-        margin: 0%;
+        margin: 20px;
         padding: 12px 20px;
         box-sizing: border-box;
-        border: thin solid black;
+        border: thin solid blue;
         background-color: white;
         resize: both;
       }
 
-      a{
-
+      a {
+        position: relative;
+        left: 40%;
+        color: blue;
+        text-decoration: none;
+        font-family: 'Langulaire-Personal';
+        line-height: 2;
+        font-size: 10em;
+        text-align: center;
       }
+      a.tab{
+        position: relative;
+        left: 40%;
+        color: blue;
+        text-decoration: none;
+        font-family: 'Langulaire-Personal';
+        line-height: 2;
+        font-size: 1em;
+      }
+      .number{
+        position: relative;
+        left: 40%;
+        color: blue;
+        text-decoration: none;
+        font-family: 'Langulaire-Personal';
+        line-height: 2;
+        font-size: 1em;
+      }
+
     </style>
 
   </head>
@@ -133,6 +160,7 @@
         <br>
         <a href="#list5_pt5.html">25</a>
         <br>
+        <a href="#website-as.html">web</a>
 
       </div>
 
@@ -141,7 +169,8 @@
 
 
           <div style="margin: 0 auto; width:100%; height:100%;">
-            <object id="list1.html" type="text/html" data="list1.html" class="webBox">
+            <a class="tab" href="list1.html" target="_blank">1</a>
+            <object id="list1.html" type="text/html" data="list1.html" class="webBox" >
             </object>
           </div>
           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
@@ -151,7 +180,7 @@
           </div>
           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
           <div style="margin: 0 auto; width:100%; height:100%;">
-            <object id="list1_pt3.html"type="text/html" data="list1_pt3.html" class="webBox">
+            <object id="list1_pt3.html" type="text/html" data="list1_pt3.html" class="webBox">
             </object>
           </div>
           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
@@ -265,6 +294,12 @@
           <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
           <div style="margin: 0 auto; width:100%; height:100%;">
             <object id="list5_pt5.html" type="text/html" data="list5_pt5.html" class="webBox">
+            </object>
+          </div>
+
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <div style="margin: 0 auto; width:100%; height:100%;">
+            <object id="website-as.html" type="text/html" data="website-as.html" class="webBox">
             </object>
           </div>
 
