@@ -6,109 +6,74 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/main.css" type="text/css" />
     <style>
+      #content,
+      html,
       body {
+        height: 98vh;
+        background-color:rgb(231, 223, 197);
+      }
+
+      #left {
+        float: left;
+        width: 15vw;
+        background: white;
+        border: 5px solid orangered;
+        background-color:rgb(231, 223, 197);
+        padding: 20px;
         height: 100vh;
+        overflow: scroll;
       }
 
-      body {
-        display: grid;
-        grid-template-areas: 'header header'
-          'nav main'
-          'footer footer';
-        grid-template-columns: minmax(auto, 12em) 5fr;
-        grid-template-rows: auto 1fr auto;
+      #right {
+        float: left;
+        width: 80vw;
+        background: white;
+        border: 5px solid orangered;
+        background-color:rgb(231, 223, 197);
+        height: 100vh;
+        overflow: scroll;
       }
-
-      h1 {
-        grid-area: header;
-      }
-
-      footer {
-        grid-area: footer;
-      }
-
-      nav {
-        grid-area: nav;
-      }
-
-
-      article {
-        grid-area: main;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      h1,
-      footer {
-        background: lightgray;
-      }
-
-      nav {
-        border-right: 1px solid lightgray;
-      }
-
-      nav,
-      article {
-        overflow-y: auto;
-      }
-
-      h1,
-      nav,
-      article,
-      footer {
-        padding: 1rem;
-      }
-
-      
     </style>
 
   </head>
 
   <body>
 
-    <h1>My<strong>Application</strong></h1>
-
-<nav>
-  <h2>My Projects</h2>
-  <ul>
-    <li><a href="markup-exercise.html"></a>Typesetting in HTML</a></li>
-    <li><a href="listlinks.html"></a>The List</a></li>
-    <li><a href="#"></a>The Clock</a></li>
-    <li><a href="#"></a>Project 4</a></li>
-    <li><a href="#"></a>Project 5</a></li>
-    <li><a href="#"></a>Project 6</a></li>
-    <li><a href="#"></a>Project 7</a></li>
-    <li><a href="#"></a>Project 8</a></li>
-    <li><a href="#"></a>Project 9</a></li>
-    <li><a href="#"></a>Project 10</a></li>
-  </ul>
-</nav>
-
-<article>
-  <h2>Project Title</h2>
-  <p>
-    All the main content lives in here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eius cumque, nihil nesciunt qui ea vero consequatur, dignissimos maxime ratione itaque amet, ab aliquid recusandae illo quibusdam debitis? Deserunt, saepe.
-  </p>
-</article>
-
-<footer>
-  back
-</footer>
-    
+    <!-- <img src="index pics/cat-mouse-1.png"> -->
     <!-- <h1 class="title">Avery</h1> -->
 
-    <!-- <h2>Exercises</h2>
-    <ol>
-      <li><a href="markup-exercise.html">Typesetting in HTML</a></li>
-    </ol>
+    <div id="content">
 
-    <h2>Projects</h2>
-    <ol>
-      <li><a href="listlinks.html">The list</a></li>
-      <li><a href="project2">The clock</a></li>
-    </ol> -->
+      <div id="left">
+        <h2>Exercises</h2>
+        <ol>
+          <li><a href="markup-exercise.html">Typesetting in HTML</a></li>
+        </ol>
+
+        <h2>Projects</h2>
+        <ol>
+          <li><a href="listlinks.html">The list</a></li>
+          <li><a href="project2">The clock</a></li>
+        </ol>
+      </div>
+      <div id="right">
+        <h2>Exercises</h2>
+        <ol>
+          <li><a href="markup-exercise.html">Typesetting in HTML</a></li>
+        </ol>
+
+        <h2>Projects</h2>
+        <ol>
+          <li><a href="listlinks.html">The list</a></li>
+          <li><a href="project2">The clock</a></li>
+        </ol>
+
+      </div>
+    </div>
+
+
+
+
 
   </body>
 
