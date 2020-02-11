@@ -8,17 +8,16 @@
     <link rel="stylesheet" href="assets/main.css" type="text/css" />
     <style>
       body {
-        padding: 20px;
+       padding: 20px;
       }
 
       .wrap {
         display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        width: 100%
+     
       }
 
       .wrap {
+        
         background: white;
         border: thin solid blue;
         padding: 20px;
@@ -33,6 +32,7 @@
       }
 
       .wrap>div {
+        
         flex: 1;
         background: white;
         border: thin solid blue;
@@ -47,10 +47,9 @@
       }
 
       .webBox {
+        float: right;
         width: 100%;
         height: 100%;
-        margin: 20px;
-        padding: 12px 20px;
         box-sizing: border-box;
         border: thin solid blue;
         background-color: white;
@@ -77,16 +76,20 @@
         font-size: 1em;
       }
 
-      /* #top{
+      #top, #btm{
        
-  animation: slide1 1s ease-in-out infinite;
+        position: relative;
+        top:0;
+        left: 0;
+        padding: 20px;
+        color: blue;
+        text-decoration: none;
+        font-family: 'Langulaire-Personal';
+        line-height: 2;
+        font-size: 1em;
 
       }
-      @keyframes slide1 {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }} */
+ 
      
 
     </style>
