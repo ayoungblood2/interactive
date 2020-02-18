@@ -37,7 +37,7 @@
                 , #000000, #ffffff, #000000, #ffffff,palegreen, orangered, #000000, 
                 #ffffff, #000000, #ffffff, #000000, #ffffff, palegreen, orangered, #000000, 
                 #ffffff, #000000, #ffffff,palegreen, orangered, #000000, #ffffff, #000000, 
-                #ffffff, #000000, #ffffff), repeating-radial-gradient(#dd780c, #188bbd 30px);
+                #ffffff, #000000, #ffffff), repeating-radial-gradient(#dd780c, #188bbd 30px),;
                 background-blend-mode:color-burn;
                 animation-name: animation;
                 animation-duration: 1s;
@@ -54,24 +54,12 @@
             }
 
             @keyframes animation{
-                0%{
-                    background: conic-gradient(palegreen, orangered, #000000, #ffffff, #000000, 
-                #ffffff,palegreen, orangered, #000000, #ffffff, #000000, #ffffff, #000000, 
-                #ffffff, palegreen, orangered, #000000, #ffffff, #000000, #ffffff, palegreen, orangered
-                , #000000, #ffffff, #000000, #ffffff,palegreen, orangered, #000000, 
-                #ffffff, #000000, #ffffff, #000000, #ffffff, palegreen, orangered, #000000, 
-                #ffffff, #000000, #ffffff,palegreen, orangered, #000000, #ffffff, #000000, 
-                #ffffff, #000000, #ffffff), repeating-radial-gradient(#dd780c, #188bbd 0px);
+                from{
+                    opacity:0;
                 }
               
-                100%{
-                    background: conic-gradient(palegreen, orangered, #000000, #ffffff, #000000, 
-                #ffffff,palegreen, orangered, #000000, #ffffff, #000000, #ffffff, #000000, 
-                #ffffff, palegreen, orangered, #000000, #ffffff, #000000, #ffffff, palegreen, orangered
-                , #000000, #ffffff, #000000, #ffffff,palegreen, orangered, #000000, 
-                #ffffff, #000000, #ffffff, #000000, #ffffff, palegreen, orangered, #000000, 
-                #ffffff, #000000, #ffffff,palegreen, orangered, #000000, #ffffff, #000000, 
-                #ffffff, #000000, #ffffff), repeating-radial-gradient(#dd780c, #188bbd 300px);
+                to{
+                    opacity: 1;
                 }
            
 
