@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>ice-time</title>
+	<title>TIME : ICE</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link type="text/css" rel="stylesheet" href="main.css">
@@ -17,34 +17,64 @@
 
 <body>
 
-	<div class="ab">
-		<div id="about">
-			*
+	<div id="overlay">
+		<div>
+
+			<button id="startButton" class="tip">
+				Start
+				<span>
+					<p>In the winter the days seem longer and the ice melts slower.</p>
+					<p>In the summer, the days shorter, the ice melts quickly, and summer ends. </p>
+					<p>It's surreal in my mind. Like a dream. </p>
+					<p>Time freezes, then evaporates, then freezes again. </p>
+					<p>Ice is a cycle and time is a constant. Always transforming at a steady pace.</p>
+				</span>
+			</button>
+			<p>Time is like ice.</p>
+			<!-- <p>In the winter the days seem longer and the ice melts slower.
+				In the summer, the days shorter, the ice melts quickly, and summer ends.
+			</p>
+			<p>It's all sort of surreal in my mind. Like a dream.
+				Time freezes, then evaporates, then freezes again.
+				Ice is a cycle and time is a constant.
+				Always transforming at a steady pace.
+			</p> -->
+
+			<div>
+				<video loop autoplay muted id="iceVideo">
+					<source src="sounds/ice_cube.mp4" type="video/mp4" />
+					<!-- <source src="ice_cube_v2.mp4" type="video/mp4" /> -->
+					<!-- <-- Your browser does not support the video tag. -->
+				</video>
+			</div>
+
+			<iframe src="sounds/ice-sounds-1.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+			</iframe>
+
+			<audio loop autoplay id="audio">
+				<source src="sounds/ice-sounds-1.mp3" type="audio/mpeg">
+				<!-- Your browser does not support the audio tag. -->
+			</audio>
+
 		</div>
-		<div id="abou">
-			<div id = "bottom-text">
-				In the winter the days seem longer and the ice melts slower. 
-						<!-- The winter solstice (~ December 21st) being the shortest day of the year. -->
-							In the summer, the days shorter, the ice melts quickly, and summer ends. 
-								<!-- The summer solstice (~ June 21st) being the longest day of the year. 
-									That means between December 21st and June 21st, the days get longer, 
-										they peak on the first day of summer, and then they get progressively shorter
-										 until the first day of winter again.  -->
-										<p>It's all sort of surreal in my mind. Like a dream.
-											Time freezes, then evaporates. 
-												Yet, at the same time, it is a constant. Always bobbing at 
-													a steady pace.</p>
-												</div>		</div>
 	</div>
-	
 
-	<div id="container"></div>
-		<div id="info">
+	<div id="info">
 
-<h1>Time is like ice.
-</h1>
+		<h1 class="blurry-text">Time is like ice.
+		</h1>
 
-		</div>
+		<!-- <div id="bottom-text">
+			<p>In the winter the days seem longer and the ice melts slower.
+				In the summer, the days shorter, the ice melts quickly, and summer ends.
+			</p>
+			<p>It's all sort of surreal in my mind. Like a dream.
+				Time freezes, then evaporates, then freezes again.
+				Ice is a cycle and time is a constant.
+				Always transforming at a steady pace.
+			</p>
+		</div> -->
+	</div>
 
 
 
@@ -72,11 +102,7 @@
 
 		var controls, water, model, sky;
 
-		var cloudy = false;
-
 		var currentColor = 0xFFFFFF; // color of model
-
-		var torusKnot;
 
 		var parameters = {
 			distance: 400,
@@ -131,17 +157,6 @@
 		scene.add(backLight);
 
 
-		// TORUS KNOT MESH
-
-		var torusKnotGeometry = new THREE.TorusKnotBufferGeometry(300, 10, 256, 32);
-		var torusKnotMaterial = new THREE.MeshNormalMaterial();
-
-		torusKnot = new THREE.Mesh(torusKnotGeometry, torusKnotMaterial);
-		torusKnot.position.y = 4;
-		torusKnot.scale.set(0.5, 0.5, 0.5);
-		// scene.add(torusKnot);
-
-
 		// WATER2 ~ CLEAR FLOW
 
 		var waterGeometry = new THREE.PlaneBufferGeometry(10000, 10000);
@@ -153,6 +168,11 @@
 			flowSpeed: params.flowSpeed,
 			textureWidth: 1024,
 			textureHeight: 1024,
+			waterNormals: new THREE.TextureLoader().load('textures/waternormals.jpg', function (texture) {
+
+			texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+
+		}),
 			sunDirection: light.position.clone().normalize(),
 			sunColor: 'ff0000',
 			distortionScale: 3.7,
@@ -232,14 +252,6 @@
 		updateSun();
 
 
-		// MODEL MATERIAL
-
-		// material samples
-
-		var cubeMaterial3 = new THREE.MeshPhongMaterial({ color: 0xccddff, envMap: sky, refractionRatio: 0.98, reflectivity: 0.9 });
-		var cubeMaterial2 = new THREE.MeshPhongMaterial({ color: 0xccfffd, envMap: sky, refractionRatio: 0.985 });
-		var cubeMaterial1 = new THREE.MeshPhongMaterial({ color: 0xffffff, envMap: sky, refractionRatio: 0.98 });
-
 		// ICE MODEL
 
 		// onProgress callback
@@ -263,23 +275,21 @@
 
 				materials.preload();
 
-		var object = new OBJLoader(manager)
-			.setMaterials(materials)
-			.setPath('models/obj/ice/')
-			.load('iceCube_v2_edit_2.obj', function (object) {
+				var object = new OBJLoader(manager)
+					.setMaterials(materials)
+					.setPath('models/obj/ice/')
+					.load('iceCube_v2_edit_2.obj', function (object) {
 
 
 
-				object.position.x = - 4;
-				// object.position.z = 40;
-				object.scale.set(objectScale, objectScale, objectScale);
-				model = object;
-				scene.add(model);
+						object.position.x = - 4;
+						// object.position.z = 40;
+						object.scale.set(objectScale, objectScale, objectScale);
+						model = object;
+						scene.add(model);
 
-			}, onProgress, onError);
-		});
-
-
+					}, onProgress, onError);
+			});
 
 
 
@@ -308,86 +318,137 @@
 		controls.update();
 
 
-		// GUI
+		// ENTER + MUSIC + GUI
 
-		var gui = new GUI();
+		var startButton = document.getElementById('startButton');
+		startButton.addEventListener('click', function (start) {
 
-		var uniforms = sky.material.uniforms;
-		var folder = gui.addFolder('Sky');
-		folder.add(parameters, 'inclination', 0, 0.5, 0.0001).onChange(updateSun);
-		folder.add(parameters, 'azimuth', 0, 1, 0.0001).onChange(updateSun);
-		folder.open();
+			var overlay = document.getElementById('overlay');
+			overlay.remove();
 
-		var uniforms = water.material.uniforms;
+			// START MUSIC
+			// create an AudioListener and add it to the camera
+			var listener = new THREE.AudioListener();
+			camera.add(listener);
 
-		var folder = gui.addFolder('Water');
-		folder.addColor(params, 'color').onChange(function (value) {
-			water.material.uniforms['color'].value.set(value);
+			// create a global audio source
+			var sound = new THREE.Audio(listener);
+
+			// load a sound and set it as the Audio object's buffer
+			var audioLoader = new THREE.AudioLoader();
+			audioLoader.load('sounds/Wind On Water.mp3', function (buffer) {
+				sound.setBuffer(buffer);
+				sound.setLoop(true);
+				sound.setVolume(0.5);
+				sound.play();
+			});
+
+
+			// SHOW GUI CONTROLS
+			var gui = new GUI();
+			// sky
+			var uniforms = sky.material.uniforms;
+			var folder = gui.addFolder('SKY');
+			folder.add(parameters, 'inclination', 0, 0.5, 0.00001).onChange(updateSun);
+			folder.add(parameters, 'azimuth', 0, 1, 0.00001).onChange(updateSun);
+			// water
+			var uniforms = water.material.uniforms;
+			var folder = gui.addFolder('WATER');
+			folder.addColor(params, 'color').onChange(function (value) {
+				water.material.uniforms['color'].value.set(value);
+			});
+			folder.add(params, 'scale', 1, 50).onChange(function (value) {
+				water.material.uniforms['config'].value.w = value;
+			});
+			folder.add(params, 'flowX', - 10, 10).step(0.01).onChange(function (value) {
+				water.material.uniforms['flowDirection'].value.x = value;
+				water.material.uniforms['flowDirection'].value.normalize();
+			});
+			folder.add(params, 'flowY', - 10, 10).step(0.01).onChange(function (value) {
+				water.material.uniforms['flowDirection'].value.y = value;
+				water.material.uniforms['flowDirection'].value.normalize();
+			});
+			// folder.add(uniforms.distortionScale, 'value', 0, 8, 0.1).name('distortionScale');
+			// folder.add(uniforms.size, 'value', 0.1, 10, 0.1).name('size');
+			folder.closed();
+
 		});
-		folder.add(params, 'scale', 1, 50).onChange(function (value) {
-			water.material.uniforms['config'].value.w = value;
-		});
-		folder.add(params, 'flowX', - 10, 10).step(0.01).onChange(function (value) {
-			water.material.uniforms['flowDirection'].value.x = value;
-			water.material.uniforms['flowDirection'].value.normalize();
-		});
-		folder.add(params, 'flowY', - 10, 10).step(0.01).onChange(function (value) {
-			water.material.uniforms['flowDirection'].value.y = value;
-			water.material.uniforms['flowDirection'].value.normalize();
-		});
-
-		// folder.add(uniforms.distortionScale, 'value', 0, 8, 0.1).name('distortionScale');
-		// folder.add(uniforms.size, 'value', 0.1, 10, 0.1).name('size');
-		folder.open();
 
 
-		// WINDOW RESIZE
-
-		window.addEventListener('resize', onResize, false);
-
-		function onResize() {
-
-			camera.aspect = window.innerWidth / window.innerHeight;
-			camera.updateProjectionMatrix();
-			renderer.setSize(window.innerWidth, window.innerHeight);
-
+		// PLAY AUDIO ICE SOUND - START SCREEN 
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		if (!isChrome) {
+			$('#iframeAudio').remove()
 		}
-
-
-		// ANIMATE & RENDER
-
-		function animate() {
-
-			requestAnimationFrame(animate);
-			render();
-
+		else {
+			$('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
 		}
-
-		function render() {
-
-			var delta = clock.getDelta();
-
-			var time = performance.now() * 0.001;
-
-			// model.position.y = Math.sin(time) * 5 - 5;
-			model.position.y = Math.sin(time) * 50 - 45;
-			// model.rotation.x = time * 0.5;
-			// model.rotation.z = time * 0.51;
-
-			// water.material.uniforms['time'].value += 1.0 / 60.0;
-
-			torusKnot.rotation.x += delta;
-			torusKnot.rotation.y += delta * 0.5;
-
-			sky.material.uniforms.value += Math.sin(time) * 5 - 5;
-
-			cubeCamera.update(renderer, sky);
-
-			renderer.render(scene, camera);
-
+		window.onload = function () {
+			document.getElementById("audio").play();
 		}
+		$(document).ready(function () {
+			$("#audio").get(0).play();
+		});
 
-		animate();
+
+			var audio = document.getElementById("audio");
+			audio.play();
+			var audio = $("#audio")[0];
+			audio.play();
+			var audio = $("#audio")[0];
+			$("startButton").mouseenter(function () {
+				audio.play();
+			});
+
+
+
+
+
+			// WINDOW RESIZE
+
+			window.addEventListener('resize', onResize, false);
+
+			function onResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize(window.innerWidth, window.innerHeight);
+
+			}
+
+
+			// ANIMATE & RENDER
+
+			function animate() {
+
+				requestAnimationFrame(animate);
+				render();
+
+			}
+
+			function render() {
+
+				var delta = clock.getDelta();
+
+				var time = performance.now() * 0.001;
+
+				// model.position.y = Math.sin(time) * 5 - 5;
+				model.position.y = Math.sin(time) * 50 - 45;
+				// model.rotation.x = time * 0.5;
+				// model.rotation.z = time * 0.51;
+
+				water.position.y += 0.35 * Math.PI / 180 / 12;
+				// water.material.uniforms[ 'time' ].value += 1.0 / 60.0;
+
+				sky.material.uniforms.value += Math.sin(time) * 5 - 5;
+
+				cubeCamera.update(renderer, sky);
+
+				renderer.render(scene, camera);
+
+			}
+
+			animate();
 
 	</script>
 
