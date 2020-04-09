@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	background-color: #000;
 	color: #fff;
-	font-family: Conv_Monarch;
+	font-family: Monarch;
 	font-size: 40px;
 	line-height: 24px;
 	overscroll-behavior: none;
@@ -11,7 +11,7 @@ body {
 
 h1 {
 	display: block;
-	font-family: Conv_Monarch;
+	font-family: Monarch;
 	letter-spacing: -1px;
 	padding: 50px;
 }
@@ -27,14 +27,17 @@ h1.blurry-text {
 	animation-iteration-count: infinite;
 }
 
+
 @font-face {
 	font-family: 'Conv_Monarch';
-	src: url('fonts/Monarch.eot');
-	src: local('☺'), url('fonts/Monarch.woff') format('woff'), url('fonts/Monarch.ttf') format('truetype'), url('fonts/Monarch.svg') format('svg');
+	src: url('http://www.averyyoungblood.com/fonts/Monarch.eot');
+	src: local('fonts/Monarch/fonts'), url('http://www.averyyoungblood.com/fonts/Monarch.woff') format('woff'), 
+	url('http://www.averyyoungblood.com/fonts/Monarch.ttf') format('truetype'), 
+	url('http://www.averyyoungblood.com/fonts/Monarch.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
-
+  }
+  
 @keyframes appear {
 	0% {
 		text-shadow: 0 0 5px rgb(255, 255, 255);
