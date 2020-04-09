@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	background-color: #000;
 	color: #fff;
-	font-family: url('/Users/averyyoungblood/Documents/interactive design/class-site-template/interactive/three.js/examples/fonts/Monarch/fonts/Monarch.ttf');
+	font-family: url('/fonts/Monarch/fonts/Monarch.ttf');
 	font-size: 40px;
 	line-height: 24px;
 	overscroll-behavior: none;
@@ -11,7 +11,7 @@ body {
 
 h1 {
 	display: block;
-	font-family: url('/Users/averyyoungblood/Documents/interactive design/class-site-template/interactive/three.js/examples/fonts/Monarch/fonts/Monarch.ttf');
+	font-family: url('/fonts/Monarch/fonts/Monarch.ttf');
 	letter-spacing: -1px;
 	padding: 50px;
 }
