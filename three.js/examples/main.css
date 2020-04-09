@@ -30,7 +30,7 @@ h1.blurry-text {
 @font-face {
 	font-family: 'Monarch';
 	src: url('fonts/Monarch/fonts/Monarch.eot');
-	src: local('fonts/LANGULAIRE-PERSONAL/fonts'), url('fonts/Monarch/fonts/Monarch.woff') format('woff'), 
+	src: local('fonts/Monarch/fonts'), url('fonts/Monarch/fonts/Monarch.woff') format('woff'), 
 	url('fonts/Monarch/fonts/Monarch.ttf') format('truetype'), 
 	url('fonts/Monarch/fonts/Monarch.svg') format('svg');
 	font-weight: normal;
