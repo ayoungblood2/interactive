@@ -123,8 +123,6 @@ a:hover {
 button {
 	cursor: pointer;
 	text-transform: uppercase;
-
-
 }
 
 button:hover {
@@ -227,6 +225,7 @@ select {
 	outline: 1px solid #ffffff;
 	border: 0px;
 	cursor: pointer;
+	margin-top: 200px;
 	/* font-size: 11px; */
 }
 
