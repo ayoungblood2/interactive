@@ -27,17 +27,16 @@ h1.blurry-text {
 	animation-iteration-count: infinite;
 }
 
-
 @font-face {
-	font-family: 'Conv_Monarch';
-	src: url('http://www.averyyoungblood.com/fonts/Monarch.eot');
-	src: local('fonts/Monarch/fonts'), url('http://www.averyyoungblood.com/fonts/Monarch.woff') format('woff'), 
-	url('http://www.averyyoungblood.com/fonts/Monarch.ttf') format('truetype'), 
-	url('http://www.averyyoungblood.com/fonts/Monarch.svg') format('svg');
+	font-family: 'Monarch';
+	src: url('fonts/Monarch/fonts/Monarch.eot');
+	src: local('fonts/LANGULAIRE-PERSONAL/fonts'), url('fonts/Monarch/fonts/Monarch.woff') format('woff'), 
+	url('fonts/Monarch/fonts/Monarch.ttf') format('truetype'), 
+	url('fonts/Monarch/fonts/Monarch.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
   }
-  
+
 @keyframes appear {
 	0% {
 		text-shadow: 0 0 5px rgb(255, 255, 255);
