@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	background-color: #000;
 	color: #fff;
-	font-family: Monarch;
+	font-family: Conv_Monarch;
 	font-size: 40px;
 	line-height: 24px;
 	overscroll-behavior: none;
@@ -11,7 +11,7 @@ body {
 
 h1 {
 	display: block;
-	font: Monarch;
+	font-family: Conv_Monarch;
 	letter-spacing: -1px;
 	padding: 50px;
 }
@@ -37,71 +37,87 @@ h1.blurry-text {
 
 @keyframes appear {
 	0% {
-		text-shadow: 0 0 5px  rgb(255, 255, 255);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
 	}
 
 	5% {
-		text-shadow: 0 0 5px  rgb(255, 255, 255);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
 	}
 
 	10% {
-		text-shadow: 0 0 5px  rgb(255, 255, 255);
+		text-shadow: 0 0 5px rgb(255, 255, 255);
 	}
 
 	15% {
-		text-shadow: 0 0 7px  rgb(255, 255, 255);
+		text-shadow: 0 0 7px rgb(255, 255, 255);
 	}
 
 	20% {
-		text-shadow: 0 0 10px  rgb(255, 255, 255);
+		text-shadow: 0 0 10px rgb(255, 255, 255);
 	}
+
 	25% {
-		text-shadow: 0 0 13px  rgb(255, 255, 255);
+		text-shadow: 0 0 13px rgb(255, 255, 255);
 	}
+
 	30% {
-		text-shadow: 0 0 17px  rgb(255, 255, 255);
+		text-shadow: 0 0 17px rgb(255, 255, 255);
 	}
+
 	35% {
-		text-shadow: 0 0 20px  rgb(255, 255, 255);
+		text-shadow: 0 0 20px rgb(255, 255, 255);
 	}
+
 	40% {
-		text-shadow: 0 0 25px  rgb(255, 255, 255);
+		text-shadow: 0 0 25px rgb(255, 255, 255);
 	}
+
 	45% {
-		text-shadow: 0 0 30px  rgb(255, 255, 255);
+		text-shadow: 0 0 30px rgb(255, 255, 255);
 	}
+
 	50% {
-		text-shadow: 0 0 35px  rgb(255, 255, 255);
+		text-shadow: 0 0 35px rgb(255, 255, 255);
 	}
+
 	55% {
-		text-shadow: 0 0 50px  rgb(255, 255, 255);
+		text-shadow: 0 0 50px rgb(255, 255, 255);
 	}
+
 	60% {
-		text-shadow: 0 0 60px  rgb(255, 255, 255);
+		text-shadow: 0 0 60px rgb(255, 255, 255);
 	}
+
 	65% {
-		text-shadow: 0 0 65px  rgb(255, 255, 255);
+		text-shadow: 0 0 65px rgb(255, 255, 255);
 	}
+
 	70% {
-		text-shadow: 0 0 70px  rgb(255, 255, 255);
+		text-shadow: 0 0 70px rgb(255, 255, 255);
 	}
+
 	75% {
-		text-shadow: 0 0 80px  rgb(255, 255, 255);
+		text-shadow: 0 0 80px rgb(255, 255, 255);
 	}
+
 	80% {
-		text-shadow: 0 0 90px  rgb(255, 255, 255);
+		text-shadow: 0 0 90px rgb(255, 255, 255);
 	}
+
 	85% {
-		text-shadow: 0 0 100px  rgb(255, 255, 255);
+		text-shadow: 0 0 100px rgb(255, 255, 255);
 	}
+
 	90% {
-		text-shadow: 0 0 200px  rgb(255, 255, 255);
+		text-shadow: 0 0 200px rgb(255, 255, 255);
 	}
+
 	95% {
-		text-shadow: 0 0 300px  rgb(255, 255, 255);
+		text-shadow: 0 0 300px rgb(255, 255, 255);
 	}
+
 	100% {
-		text-shadow: 0 0 500px  rgb(255, 255, 255);
+		text-shadow: 0 0 500px rgb(255, 255, 255);
 	}
 }
 
