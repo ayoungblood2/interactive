@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>A House of Dust by Alison Knowles</title>
+	<!-- Thanks! Adapted from an exercise by Laurel Schwulst! -->
+	<style>
+		body {
+			margin: 75px;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-family: "Courier New", Courier, monospace;
+		}
+		.button-container {
+			position: fixed;
+			bottom: 75px;
+			left: 75px;
+		}
+		#line-one {
+
+		}
+		#line-two {
+			text-indent: 1em;
+		}
+		#line-three {
+			text-indent: 2em;
+		}
+		#line-four {
+			text-indent: 3em;
+		}
+	</style>
+	
+	<script type="text/javascript">
+
+		// run the folowing code when the page has loaded.
+		window.onload = function() { 
+		   
+			// first thing, store some HTML elements in variables. This makes it easier to refer to these things later on, it's just for saving room.
+			var first_line = document.getElementById("line-one");
+			var second_line = document.getElementById("line-two");
+			var third_line = document.getElementById("line-three");
+			var fourth_line = document.getElementById("line-four");
+
+			var button = document.getElementById("button");
+
+			// now define a few arrays. The items in these arrays will be used to populate the HTML.
+
+			// line one content
+			var line_one = [
+				"a house of wood",
+				"a house of brick",
+				"a house of broken dishes",
+				"a house of discarded clothing",
+				"a house of dust",
+				"a house of glass",
+				"a house of leaves",
+				"a house of mud",
+				"a house of paper",
+				"a house of plastic",
+				"a house of roots",
+				"a house of sand",
+				"a house of steel",
+				"a house of stone",
+				"a house of straw",
+				"a house of tin",
+				"a house of weeds"
+			];
+
+			// line two content
+			var line_two = [
+				"underwater",
+				"among other houses",
+				"among small hills",
+				"among high montains",
+				"by a river",
+				"by an abandoned lake",
+				"in a cold, windy climate",
+				"in a desert",
+				"in a deserted airport",
+				"in a deserted church",
+				"in a deserted factory",
+				"in a hot climate",
+				"in a metropolis",
+				"in a place with both heavy rain and bright sun",
+				"in an overpopulated area",
+				"in dense woods",
+				"in green mossy terrain",
+				"in heavy jungle undergrowth",
+				"in Japan",
+				"in Michigan",
+				"in southern France",
+				"inside a mountain",
+				"on an island",
+				"on the sea",
+				"on open ground",
+			];
+
+			// line three content
+			var line_three = [
+				"using natural light",
+				"using all available lighting",
+				"using candles",
+				"using electricity"
+			];
+
+			// line four content
+			var line_four = [
+				"inhabited by very tall people",
+				"inhabited by all races of men reprensented wearing predominantly red clothing",
+				"inhabited by american indians",
+				"inhabited by children and old people",
+				"inhabited by collectors of all types",
+				"inhabited by fishermen and families",
+				"inhabited by french and german speaking people",
+				"inhabited by friends",
+				"inhabited by horses and birds",
+				"inhabited by little boys",
+				"inhabited by lovers",
+				"inhabited by negros wearing all colors",
+				"inhabited by people from many walks of life",
+				"inhabited by people speaking many languages wearing little or no clothing",
+				"inhabited by people who eat a great deal",
+				"inhabited by people who enjoy eating together",
+				"inhabited by people who love to read",
+				"inhabited by people who sleep almost all the time",
+				"inhabited by people who sleep very little",
+				"inhabited by various birds and fish",
+				"inhabited by vegetarians",
+				"inhabited by friends and enemies"
+			];
+
+			// select_random is a function that returns a random item from an array. 
+			// x, in the parentheses, is called a parameter. It's like a variable that only exists in the scope of one function. 
+			// When we run this function later on, we'll replace x with the name of the array that we want to select from.
+			function select_random(x){
+				y = x[Math.floor(Math.random()*x.length)];
+				return y;
+			}
+
+			// this is a function called generate.
+			function generate(){
+
+				// the first generate it does is create four variables. Each variable is assigned a value. The value is the random item from each array.
+				var selected_one = select_random(line_one);
+				var selected_two = select_random(line_two);
+				var selected_three = select_random(line_three);
+				var selected_four = select_random(line_four);
+
+				// Now, take the random item from the array, and change the HTML content of each item to that value.
+				first_line.innerHTML = selected_one;
+				second_line.innerHTML = selected_two;
+				third_line.innerHTML = selected_three;
+				fourth_line.innerHTML = selected_four;
+
+			}
+
+			// When you click the 'button', run the 'generate' function. This will change the content of the page.
+			document.getElementById('button').onclick =function(){
+
+				// also, tell us that we're clicking, so we can make sure this works!
+				console.log('click');
+				generate();
+			};
+
+			// This is necessary so that when the page loads, it automatically runs generate.
+			generate();
+	
+		} 
+	</script>
+
+</head>
+
+<body>
+
+	<div class="button-container">
+		<button id="button">Again</button>
+	</div>
+
+	<div id="line-one"></div>
+	<div id="line-two"></div>
+	<div id="line-three"></div>
+	<div id="line-four"></div>
+
+</body>
+
+</html>

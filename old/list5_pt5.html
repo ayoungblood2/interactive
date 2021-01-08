@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>25</title>
+    <style>
+      @font-face {
+        font-family: Nieuk regular;
+        src: url(fonts/Nieuk/nieuk_regular-webfont.woff);
+      }
+
+      body {
+        font-family: Nieuk regular;
+        transform: rotate(10deg);
+        padding-bottom: 15vh;
+      }
+
+      body:hover {
+        transform: rotate(0deg);
+      }
+
+      #content,
+      html,
+      body {
+        height: 98%;
+      }
+
+      #left {
+        float: left;
+        width: 50%;
+        background: white;
+        border: thin solid black;
+        padding: 20px;
+        height: 100%;
+        overflow: scroll;
+      }
+
+      #right {
+        float: left;
+        width: 50%;
+        background: white;
+        border: thin solid black;
+        height: 100%;
+        overflow: scroll;
+        background-image: url('congo/LumumbaBrussel1960.jpg')
+      }
+
+      #right:hover {
+        background-image: none;
+      }
+
+      /* #right a:hover+span {
+        width: 256px;
+        background: white;
+        border: thin solid black;
+        height: 256px;
+      } */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .picContainer {
+        display: inline-block;
+        position: relative;
+        width: 50px;
+      }
+
+      .pic {
+        display: inline-block;
+        position: relative;
+        /* visibility: hidden; */
+        background-color: white;
+        border: thin solid black;
+        margin: 10px 10px;
+        overflow: hidden;
+        height: 265px;
+        width: 265px;
+        vertical-align: top;
+
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+      }
+
+      .picContainer:hover .overlay {
+        opacity: 1;
+
+      }
+
+      .overlayImage {
+        position: absolute;
+        top: -16.5%;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        transform: translate(-50%);
+        z-index: 1;
+        padding-left: 50px;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+        text-align: justify;
+        text-transform: uppercase;
+        transition: 0s 3600s;
+        animation: scroll 15s ease-in-out;
+        transform: rotate(180deg);
+        vertical-align: middle;
+        text-align: center;
+
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateY(-900px);
+        }
+
+        50% {
+          transform: translateY(900px);
+
+        }
+      }
+
+      h1:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        transition: 0s;
+      }
+
+      span {
+        text-decoration: none;
+        font-weight: 700;
+        background-color: black;
+      }
+
+      /* span:active {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 100px;
+        background-color: transparent;
+        word-break: break-all;
+
+      } */
+
+      #Black {
+        display: none;
+      }
+
+      #Black:target {
+        display: inline-block;
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: transparent;
+        word-break: break-all;
+        overflow: hidden;
+
+      }
+
+
+      p {
+        display: block;
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100px;
+        text-transform: uppercase;
+        color: white;
+        /* -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white; */
+        font-weight: 600;
+        text-decoration: none;
+        z-index: 2;
+        top: -5%;
+        text-align: center;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .contain {
+        object-fit: contain;
+      }
+
+      #right::-webkit-scrollbar {
+        display: none;
+      }
+
+      #left::-webkit-scrollbar {
+        display: none;
+      }
+
+      body::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>colonial belgium congo</h1>
+
+
+
+    <div id="content">
+      <div id="left">
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+        architecture assasination ballet belgium berlin bigotry <a href="#Black"
+          style="background-color: black;">black</a><span id="Black"><a href="#">black</a></span> buttons capitalism
+        civil servant
+        climate change college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders
+        lies monarchy movement murder opponent pluralist protests
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit
+        unit voices woman workers working-class yellow
+
+      </div>
+
+
+
+
+      <div id="right">
+
+        <!-- <a style="z-index: -1;"> colonial elite</a> -->
+        <!-- <span style="z-index: -1;">assassination congo communist working-class</span> -->
+
+        <div class="picContainer">
+          <p style="left: 300%;">murder</p>
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: black; border-right: black;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+
+
+        <br>
+
+
+
+        <div class="picContainer">
+          <p style="left: 90%;">communism</p>
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: black;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+
+
+
+        <br>
+
+
+
+
+        <div class="picContainer">
+          <p style="left: 250%;">leaders</p>
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: black;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+
+        <br>
+
+
+
+
+
+        <div class="picContainer">
+          <p style="left: 500%;">free</p>
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: black;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <br>
+
+
+
+        <div class="picContainer">
+          <p style="left: 370%;">voices</p>
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: none;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+        <div class="picContainer">
+          <id class="pic"
+            style="background-color: white; border-top: thin solid black; border-bottom: thin solid black; border-left: none; border-right: black;">
+          </id>
+          <!-- <img src="congo/LumumbaBrussel1960.jpg" class="pic"> -->
+          <div class="overlay">
+            <div class="overlayImage">
+              <img class="contain" src="congo/LumumbaBrussel1960.jpg" style="width:380px; height:380px;"></div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
+
+
+<!--    architecture assasination ballet belgium berlin bigotry black buttons capitalism civil servant climate ch college colonial communist congo design disaster dissolved dynamic
+        efficiency elections elite france free government homeless housing integrated independent kitchen labour leaders lies monarchy movement murder opponent pluralist protests 
+        prototype red religion right risky self-determination sexist social solidarity strike support surrender transit unit voices woman workers working-class yellow 
+
+        <p>congo<br>belgium<br>france<br>berlin</p>
+        <p>architecture<br>design<br>ballet<br>woman</p>
+        <p>homeless<br>housing<br>free<br>government</p>
+        <p>solidarity<br>strike<br>support<br>working-class</p>
+        <p>workers<br>protests<br>social<br>unit</p>
+        <p>risky<br>self-determination<br>unit<br>elections</p>
+-->

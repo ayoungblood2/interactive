@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>ambient</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+
+
+        <style type="text/css">
+            html {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                overflow: hidden;
+                height: 100vh;
+                width: 100vw;
+                background: conic-gradient(palegreen, orangered, #000000, #ffffff, #000000,
+                        #ffffff, palegreen, orangered, #000000, #ffffff, #000000, #ffffff, #000000,
+                        #ffffff, palegreen, orangered, #000000, #ffffff, #000000, #ffffff, palegreen, orangered, 
+                        #000000, #ffffff, #000000, #ffffff, palegreen, orangered, #000000,
+                        #ffffff, #000000, #ffffff, #000000, #ffffff, palegreen, orangered, #000000,
+                        #ffffff, #000000, #ffffff, palegreen, orangered, #000000, #ffffff, #000000,
+                        #ffffff, #000000, #ffffff);
+                background-blend-mode: color-burn;
+            }
+
+            #gradient {
+                height: 100%;
+                position: sticky;
+                background: conic-gradient(palegreen, orangered, #000000, #ffffff, #000000,
+                        #ffffff, palegreen, orangered, #000000, #ffffff, #000000, #ffffff, #000000,
+                        #ffffff, palegreen, orangered, #000000, #ffffff, #000000, #ffffff, palegreen, orangered, 
+                        #000000, #ffffff, #000000, #ffffff, palegreen, orangered, #000000,
+                        #ffffff, #000000, #ffffff, #000000, #ffffff, palegreen, orangered, #000000,
+                        #ffffff, #000000, #ffffff, palegreen, orangered, #000000, #ffffff, #000000,
+                        #ffffff, #000000, #ffffff), repeating-radial-gradient(lime, blue 30px),
+                    -webkit-gradient(linear, 0 0, 0 100%, from(lime), to(blue));
+                background-blend-mode: color-burn;
+                animation-name: animation;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            #gradient:hover {
+                animation-play-state: paused;
+                animation-duration: 0s;
+            }
+
+            #gradient:active {
+                animation-play-state: running;
+            }
+
+            @keyframes animation {
+                from {
+                    opacity: 0;
+                    background: repeating-radial-gradien(100px)
+                }
+
+                50% {
+                    background: repeating-radial-gradien(40px)
+                }
+
+                75% {
+                    background: repeating-radial-gradien(80px)
+                }
+
+                85% {
+                    background: repeating-radial-gradien(20px)
+                }
+
+                to {
+                    opacity: 1;
+                    background: repeating-radial-gradient(blue, lime 2px)
+                }
+
+
+
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="gradient"></div>
+
+
+    </body>
+
+</html>

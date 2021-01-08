@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>21</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                perspective: 400px;
+                overflow: hidden;
+                background-color: black;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 99.99%;
+                /* Should be `0` but Safari needs this! (BUG #1) */
+                right: 0;
+            }
+
+            .wrapper {
+                transform-style: preserve-3d;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                transform: rotateX(4000deg);
+                transform: rotateY(600deg)
+            }
+
+            .slides {
+                perspective: 313px;
+                padding: 50px 0px;
+                width: 100%;
+                height: 1000px;
+                transform-style: preserve-3d;
+                overflow: scroll;
+                transform: translate(-50%, -0%);
+                position: fixed;
+                top: 50%;
+                left: 50%;
+            }
+
+
+            .slide {
+                position: relative;
+                margin: auto;
+                width: 600px;
+                height: 400px;
+                transform: rotateX(-80deg);
+                transform-origin: 0 0;
+                transition: 0s 3600s;
+        animation: scroll 5s ease-in-out infinite;
+        transform: rotate(180deg);
+        vertical-align: middle;
+        text-align: center;
+
+      
+            }
+
+.slide:hover{
+    -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        transition: 0s;
+}
+
+
+      @keyframes scroll {
+        0% {
+          transform: translateY(-900px);
+        }
+
+        75% {
+          transform: translateY(900px);
+
+        }
+
+      }
+            .title {
+                color: #fff;
+                font-size: 275%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                white-space: nowrap;
+                transform: translate(-50%, -50%);
+                text-transform: uppercase;
+            }
+
+            h1 {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 100px;
+                text-align: justify;
+                text-transform: lowercase;
+                vertical-align: middle;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="slides">
+                <div class="slide">
+                    <div class="title">
+                        <h1>colonial belgium congo</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1>black leaders assassination</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1>bigotry murder</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1>communist government dissolved independent colonial belgium</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1>opponent protests integrated solidarity</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1>voices surrender social support</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1>right lies capitalism strike college</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1>self-determination workers working-class elections</h1>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="title">
+                        <h1>risky pluralist labour unit movement</h1>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="title">
+                        <h1>elite france monarchy ballet disaster</h1>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="title">
+                        <h1>dynamic efficiency transit climate change protoype</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1> sexist woman belrin kitchen architecture design religion</h1>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="title">
+                        <h1> red yellow buttons homeless housing civil servant</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
