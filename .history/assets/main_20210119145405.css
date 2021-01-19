@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Inconsolata;
+  src: url(fonts/Inconsolata.otf);
+}
+
+div {
+  font-family: Inconsolata;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header {
+  text-align: left;
+  padding: 32px;
+}
