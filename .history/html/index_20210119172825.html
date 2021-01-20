@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/style/main.css">
+  <link rel="javascript" type="text/javascript" href="/script/logic.js">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+
+<style type="text/css">
+/*=============== SQUARE STUDIO TABBED CONTENT PLUGIN START ===============*/
+.sqpl-tab-button{cursor:pointer;display:inline-block;border-bottom:0px solid transparent;padding:.5em 1.5em 0em 1.5em;margin:0;text-align:center;color:#E8D7C7;position:relative;z-index:3}.sqpl-tab-button:hover{border-bottom:0px solid #261F1D;color:#261F1D!important;}.sqpl-active-tab{border-bottom:0px solid #362924;color:#111!important;}.sqpl-tab-content{border-top:1.5px dashed #261F1D!important;z-index:1}.sqpl-tab-controls{margin-bottom:-2px;z-index:2}
+</style>
+
+</head>
+
+<body>
+
+  <div class="header" id="myHeader">
+    <h1>Hi. My name is Avery.</h1>
+    <h1>I live in New Haven and work as an independent designer.</h1>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="/content/img213.jpg" alt="2021-1a" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img214.jpg" alt="2021-1b" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img215.jpg" alt="2021-1c" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img216.jpg" alt="2021-2a" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img217.jpg" alt="2021-2b" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img218.jpg" alt="2021-2c" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img219.jpg" alt="2021-3a" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img220.jpg" alt="2021-3b" style="width:100%">
+    </div>
+    <div class="grid-item">
+      <img src="/content/img213.jpg" alt="2021-3c" style="width:100%">
+    </div>
+  </div>
+
+
+  <svg id="svg" xmlns="http://www.w3.org/2000/svg" >
+    <polyline id="polyline" fill="none" />
+  </svg>
+  <style>
+  @media only screen and (min-width: 921px) {
+  
+  * {
+    --cursorcolors: #261F1D;
+    cursor: none;
+    }
+  #svg {
+    z-index: 999999999;
+    width: 200vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events:none;
+  }
+  #polyline {
+    z-index: 999999999;
+    stroke-dasharray: 0;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke: var(--cursorcolors) !important;
+  }
+    #polyline.active {
+      stroke: #261F1D !important;
+    }
+    
+   }
+    
+    @media only screen and (max-width: 920px) {
+      #svg, #polyline {
+        display: none !important;
+      }
+    }
+    
+  </style>
+  <script>
+  $(function(){
+  let x, y;
+  const mousemove = ({ clientX, clientY }) => (x = clientX, y = clientY);
+  const dist = (x1, y1, x2, y2) => Math.sqrt(Math.abs(x1 - x2) + Math.abs(y1 - y2));
+  const points = [];
+  const MIN_DIST = 1;
+  const MAX_POINTS = 42;
+  const svgns = 'http://www.w3.org/2000/svg';
+  let { width, height } = svg.getBoundingClientRect();
+  svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+  addEventListener('resize', () => {
+    const r = svg.getBoundingClientRect();
+    width = r.width; height = r.height;
+    svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+  });
+  function frame() {
+    requestAnimationFrame(frame);
+    if (!x || !y) return;
+    if (!points.length) return points.push([x, y]);
+    const [px, py] = points[points.length - 1];
+    const d = dist(x, y, px, py);
+    if (d < MIN_DIST) return;
+    points.push([x, y]);
+    const pathString = points.reduce((acc, [x, y]) => {
+      return acc + ` ${x},${y}`
+    }, '');
+    polyline.setAttribute('points', pathString);
+    if (points.length > MAX_POINTS) points.shift();
+  }
+  
+  addEventListener('mousemove', mousemove);
+  requestAnimationFrame(frame);
+  });
+    </script>
+  <script>
+      $(window).mousemove(function(e) {
+        $("a")
+      .on("mouseenter", function() {   
+      $('#polyline').addClass("active")     
+      })  
+      });
+      $(window).mousemove(function(e) {
+        $("a")
+      .on("mouseleave", function() {    
+      $('#polyline').removeClass("active")      
+      })
+      });
+  </script><script type="text/javascript" data-sqs-type="imageloader-bootstrapper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script>
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@ $(function () {
   const dist = (x1, y1, x2, y2) => Math.sqrt(Math.abs(x1 - x2) + Math.abs(y1 - y2));
   const points = [];
   const MIN_DIST = 1;
-  const MAX_POINTS = 800;
+  const MAX_POINTS = 42;
   const svgns = 'http://www.w3.org/2000/svg';
   let { width, height } = svg.getBoundingClientRect();
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);

@@ -17,7 +17,7 @@ $(function () {
     requestAnimationFrame(frame);
     if (!x || !y) return;
     if (!points.length) return points.push([x, y]);
-    const [px, py] = points[points.length - 1];
+    const [px, py] = points[points.length - 100];
     const d = dist(x, y, px, py);
     if (d < MIN_DIST) return;
     points.push([x, y]);

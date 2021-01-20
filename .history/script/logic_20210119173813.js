@@ -1,10 +1,10 @@
-$(function () {
+$(function(){
   let x, y;
   const mousemove = ({ clientX, clientY }) => (x = clientX, y = clientY);
   const dist = (x1, y1, x2, y2) => Math.sqrt(Math.abs(x1 - x2) + Math.abs(y1 - y2));
   const points = [];
   const MIN_DIST = 1;
-  const MAX_POINTS = 800;
+  const MAX_POINTS = 42;
   const svgns = 'http://www.w3.org/2000/svg';
   let { width, height } = svg.getBoundingClientRect();
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
@@ -27,20 +27,20 @@ $(function () {
     polyline.setAttribute('points', pathString);
     if (points.length > MAX_POINTS) points.shift();
   }
-
+  
   addEventListener('mousemove', mousemove);
   requestAnimationFrame(frame);
-});
+  });
 
-$(window).mousemove(function (e) {
-  $("a")
-    .on("mouseenter", function () {
-      $('#polyline').addClass("active")
-    })
-});
-$(window).mousemove(function (e) {
-  $("a")
-    .on("mouseleave", function () {
-      $('#polyline').removeClass("active")
-    })
-});
+  $(window).mousemove(function(e) {
+    $("a")
+  .on("mouseenter", function() {   
+  $('#polyline').addClass("active")     
+  })  
+  });
+  $(window).mousemove(function(e) {
+    $("a")
+  .on("mouseleave", function() {    
+  $('#polyline').removeClass("active")      
+  })
+  });

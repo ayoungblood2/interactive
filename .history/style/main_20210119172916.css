@@ -13,7 +13,6 @@ div {
   background-color: white;
   padding: 10px;
 }
-
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
@@ -28,24 +27,20 @@ div {
 }
 
 ::selection {
-  background: white;
+  background: white; /* WebKit/Blink Browsers */
   color: white;
-  /* WebKit/Blink Browsers */
 }
-
 ::-moz-selection {
-  background: white;
+  background: white; /* Gecko Browsers */
   color: white;
-  /* Gecko Browsers */
 }
 
 @media only screen and (min-width: 921px) {
-
+  
   * {
     --cursorcolors: #261F1D;
     cursor: none;
-  }
-
+    }
   #svg {
     z-index: 999999999;
     width: 200vw;
@@ -53,27 +48,23 @@ div {
     position: fixed;
     top: 0;
     left: 0;
-    pointer-events: none;
+    pointer-events:none;
   }
-
   #polyline {
     z-index: 999999999;
     stroke-dasharray: 0;
-    stroke-width: 1;
+    stroke-width: 2;
     stroke-linecap: round;
     stroke: var(--cursorcolors) !important;
   }
-
-  #polyline.active {
-    stroke: #261F1D !important;
-  }
-
-}
-
-@media only screen and (max-width: 920px) {
-
-  #svg,
-  #polyline {
-    display: none !important;
-  }
-}
+    #polyline.active {
+      stroke: #261F1D !important;
+    }
+    
+   }
+    
+    @media only screen and (max-width: 920px) {
+      #svg, #polyline {
+        display: none !important;
+      }
+    }

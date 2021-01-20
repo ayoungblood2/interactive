@@ -29,14 +29,15 @@ div {
 
 ::selection {
   background: white;
-  color: white;
   /* WebKit/Blink Browsers */
+  color: white;
+  text-decoration: underline;
 }
 
 ::-moz-selection {
   background: white;
-  color: white;
   /* Gecko Browsers */
+  color: white;
 }
 
 @media only screen and (min-width: 921px) {
