@@ -1,4 +1,15 @@
-// mouse
+var lastClickedFace = null;
+
+$(".grid-container").click(function(e) {
+ if (lastClickedFace) {
+  $(lastClickedFace).css("background-color", "white");
+ }
+  
+ $(this).css("background-color", "black");
+  
+ lastClickedFace = this;
+});
+
 $(function () {
   let x, y;
   const mousemove = ({ clientX, clientY }) => (x = clientX, y = clientY);
@@ -18,7 +29,7 @@ $(function () {
     requestAnimationFrame(frame);
     if (!x || !y) return;
     if (!points.length) return points.push([x, y]);
-    const [px, py] = points[points.length - 1];
+    const [px, py] = points[points.length + 1];
     const d = dist(x, y, px, py);
     if (d < MIN_DIST) return;
     points.push([x, y]);
@@ -46,23 +57,3 @@ $(window).mousemove(function (e) {
     })
 });
 
-//grid expansion
-// Reference the .gridcontainer
-var grid = document.querySelector('.gridcontainer');
-
-// Register click event to grid callback rowCol runs on click
-grid.onclick = rowCol;
-
-/* 
-Callback function rowCol() passes the Event Object...
-if the clicked element (e.target) .matches() class .item...
-get the clicked element's (ie .item) .closest() element .gridcontainer and 
-add/remove class .col or .row
-*/
-function rowCol(e) {
-  if (e.target.matches('.item')) {
-    e.target.closest('.gridcontainer').classList.toggle('row');
-    e.target.closest('.gridcontainer').classList.toggle('col');
-  }
-  return false;
-}

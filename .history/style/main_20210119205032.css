@@ -29,10 +29,12 @@ div {
 
 /* selection properties*/
 ::selection {
+  background: white;
   color: white;
   /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
+  background: white;
   color: white;
   /* Gecko Browsers */
 }
@@ -47,7 +49,7 @@ div {
   }
 
   #svg {
-    z-index: 999999999;
+    z-index: -999999999;
     width: 200vw;
     height: 100vh;
     position: fixed;

@@ -15,12 +15,12 @@ div {
 /* grid */
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  
+  grid-template-columns: repeat(5, auto);
+  background-color: white;
   padding: 10px;
 }
 .grid-item {
- 
+  background-color: white;
   border: 1px solid black;
   padding: 20px;
   font-size: 30px;
@@ -29,10 +29,12 @@ div {
 
 /* selection properties*/
 ::selection {
+  background: white;
   color: white;
   /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
+  background: white;
   color: white;
   /* Gecko Browsers */
 }

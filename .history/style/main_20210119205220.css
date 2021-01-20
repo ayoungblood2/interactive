@@ -47,7 +47,7 @@ div {
   }
 
   #svg {
-    z-index: 999999999;
+   
     width: 200vw;
     height: 100vh;
     position: fixed;

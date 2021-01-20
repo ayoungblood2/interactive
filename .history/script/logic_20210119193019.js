@@ -1,4 +1,10 @@
-// mouse
+$('.grid-item').onclick(function() {
+  $('.grid-item').removeAttr('style');
+  $(this).css('grid-column','span 3');
+  $(this).css('grid-row','span 2');
+  $(this).css('height','auto');
+});
+
 $(function () {
   let x, y;
   const mousemove = ({ clientX, clientY }) => (x = clientX, y = clientY);
@@ -46,23 +52,3 @@ $(window).mousemove(function (e) {
     })
 });
 
-//grid expansion
-// Reference the .gridcontainer
-var grid = document.querySelector('.gridcontainer');
-
-// Register click event to grid callback rowCol runs on click
-grid.onclick = rowCol;
-
-/* 
-Callback function rowCol() passes the Event Object...
-if the clicked element (e.target) .matches() class .item...
-get the clicked element's (ie .item) .closest() element .gridcontainer and 
-add/remove class .col or .row
-*/
-function rowCol(e) {
-  if (e.target.matches('.item')) {
-    e.target.closest('.gridcontainer').classList.toggle('row');
-    e.target.closest('.gridcontainer').classList.toggle('col');
-  }
-  return false;
-}

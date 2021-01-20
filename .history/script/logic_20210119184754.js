@@ -1,4 +1,3 @@
-// mouse
 $(function () {
   let x, y;
   const mousemove = ({ clientX, clientY }) => (x = clientX, y = clientY);
@@ -46,23 +45,14 @@ $(window).mousemove(function (e) {
     })
 });
 
-//grid expansion
-// Reference the .gridcontainer
-var grid = document.querySelector('.gridcontainer');
+var lastClickedFace = null;
 
-// Register click event to grid callback rowCol runs on click
-grid.onclick = rowCol;
-
-/* 
-Callback function rowCol() passes the Event Object...
-if the clicked element (e.target) .matches() class .item...
-get the clicked element's (ie .item) .closest() element .gridcontainer and 
-add/remove class .col or .row
-*/
-function rowCol(e) {
-  if (e.target.matches('.item')) {
-    e.target.closest('.gridcontainer').classList.toggle('row');
-    e.target.closest('.gridcontainer').classList.toggle('col');
-  }
-  return false;
-}
+$(".faces").click(function(e) {
+ if (lastClickedFace) {
+  $(lastClickedFace).css("background-color", "red");
+ }
+  
+ $(this).css("background-color", "green");
+  
+ lastClickedFace = this;
+});/<-- In your solution is a colon instead of semicolon
