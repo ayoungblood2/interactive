@@ -1,0 +1,282 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="/style/main.css">
+  <link rel="stylesheet" type="text/css" href="/style/img.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/script/logic.js"></script>
+  <title>youngblood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="margin: 0; padding: 0;" class="example">
+  <a onclick="topFunction()" id="myBtn">&#8593;</a>
+  <a href="javascript:history.go(0)" id="refresh">*</a>
+  <button onclick="myFunction()" id="scrollDown">&#8595;</button>
+
+
+  <svg id="svg" xmlns="http://www.w3.org/2000/svg">
+    <polyline id="polyline" fill="none" />
+  </svg>
+  <div class="header" id="myHeader">
+    <h1>Hi. My name is <a id="resume" href="/html/resume.html">Avery</a>.</h1>
+    <h1>I live in New Haven and work as an independent designer.</h1>
+  </div>
+
+  <div id="mydiv">
+    <div id="mydivheader">
+
+      <div style="padding-bottom:70.7%" id="main">
+        <img data-src="/content/img01.png" sizes="1265px" src="/content/img01.png">
+        <div id="hov">grab & &#8594;</div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img05.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img05.png" id="image-container0">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:150%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img06.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img06.png" id="image-container1">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img13.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img13.png" id="image-container2">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img04.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img04.png" id="image-container3">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img17.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img17.png" id="image-container4">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img18.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img18.png" id="image-container5">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img08.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img08.png" id="image-container6">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img02.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img02.png" id="image-container7">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img11.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img11.png" id="image-container8">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img14.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img14.png" id="image-container9">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img26.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img26.png" id="image-container10">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img19.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img19.png" id="image-container11">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img15.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img15.png" id="image-container12">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img27.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img27.png" id="image-container13">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img16.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img16.png" id="image-container14">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img24.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img24.png" id="image-container15">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img33.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img33.png" id="image-container16">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img10.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img10.png" id="image-container17">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img29.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img29.png" id="image-container18">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img31.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img31.png" id="image-container19">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img22.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img22.png" id="image-container20">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img12.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img12.png" id="image-container21">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img25.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img25.png" id="image-container22">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img03.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img03.png" id="image-container23">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img32.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img32.png" id="image-container24">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img09.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img09.png" id="image-container25">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img28.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img28.png" id="image-container26">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img07.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img07.png" id="image-container27">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img30.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img30.png" id="image-container28">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img23.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img23.png" id="image-container29">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img21.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img21.png" id="image-container30">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/img20.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/img20.png" id="image-container31">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/33.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/33.png" id="image-container32">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="/content/polaroid_me.png" data-srcset=""
+          alt="" sizes="1265px" src="/content/polaroid_me.png" id="image-container33">
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="/script/index.js"></script>
+</body>
+
+</html>

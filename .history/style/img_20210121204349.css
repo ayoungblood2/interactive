@@ -1,0 +1,11 @@
+
+* {
+    box-sizing: border-box;
+    display: grid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block
+}

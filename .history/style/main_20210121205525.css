@@ -1,0 +1,162 @@
+@font-face {
+  font-family: Inconsolata;
+  src: url(fonts/Inconsolata.otf);
+}
+
+div {
+  font-family: Inconsolata;
+  font-size: 12px;
+}
+#refresh:hover{
+  color: greenyellow;
+  font-size: 100px;
+}
+
+#resume:hover{
+  color: greenyellow;
+}
+
+body{
+  overflow: scroll; /* Add the ability to scroll */
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .example::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+.header {
+  text-align: left;
+  padding: 32px;
+  position: fixed;
+  z-index: 9999999;
+}
+
+
+/* selection properties*/
+::selection {
+  color: transparent;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  color: transparent;
+  /* Gecko Browsers */
+}
+
+
+/* cursor properties */
+@media only screen and (min-width: 921px) {
+
+  * {
+    --cursorcolors: #261F1D;
+    cursor: none;
+  }
+
+  #svg {
+    z-index: 999999999;
+    width: 200vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  #polyline {
+    z-index: 999999999;
+    stroke-dasharray: 0;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke: var(--cursorcolors) !important;
+  }
+
+  #polyline.active {
+    stroke: #261F1D !important;
+  }
+
+}
+
+@media only screen and (max-width: 920px) {
+
+  #svg,
+  #polyline {
+    display: none !important;
+  }
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 1;
+}
+
+#mydivheader {
+  z-index: -10;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: Inconsolata;
+}
+
+#myBtn:hover {
+  color: greenyellow;
+  font-size: 100px;
+}
+
+
+div:hover > #hov{
+  display : block;
+}
+
+#hov{
+  font-family: Inconsolata;
+  display:none;
+position: fixed;
+  font-style: italic;
+  font-size:500px;
+  font-weight: bold;
+  color: greenyellow;
+}
+
+#main{
+    cursor: none;
+}
+
+#refresh{
+  position: absolute;
+    bottom: 0;
+    left: 0;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: Inconsolata;
+  text-align: left;
+  padding: 32px;
+  position: fixed;
+  z-index: 9999999;
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}

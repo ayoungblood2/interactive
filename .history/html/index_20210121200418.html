@@ -1,0 +1,157 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="/style/main.css">
+  <link rel="stylesheet" type="text/css" href="/style/img.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/script/logic.js"></script>
+  <title>youngblood</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="margin: 0; padding: 0;" class="example">
+  <a onclick="topFunction()" id="myBtn" >&#8593;</a>
+  <a href="javascript:history.go(0)" id="refresh">*</a>
+
+
+  <svg id="svg" xmlns="http://www.w3.org/2000/svg">
+    <polyline id="polyline" fill="none" />
+  </svg>
+  <div class="header" id="myHeader">
+    <h1>Hi. My name is <a id="resume" href="">Avery</a>.</h1>
+    <h1>I live in New Haven and work as an independent designer.</h1>
+  </div>
+
+  <div id="mydiv">
+    <div id="mydivheader">
+
+      <div style="padding-bottom:70.7%" id="main">
+        <img data-src="/content/img07.png" sizes="1265px" src="/content/img07.png">
+        <div id="hov">grab & &#8594;</div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912173.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912173.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:150%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912174.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912174.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912175.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912175.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912176.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912176.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912177.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912177.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:72.1%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912178.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_0912178.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:141.9%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121710.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121710.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121711.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121711.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121712.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121712.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121713.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121713.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121714.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121714.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:72.05%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121715.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121715.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.7%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121716.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121716.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:132.54999999999998%">
+        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121717.jpg" data-srcset=""
+          alt="" sizes="1265px" src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121717.jpg">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:72.1%">
+        <img class="lazyload" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121718.jpg" data-srcset=""
+          alt="">
+      </div>
+    </div>
+    <div class="image-view">
+      <div class="image-wrap" style="padding-bottom:70.6%">
+        <img class="lazyload" data-sizes="auto"
+          data-src="https://kostasmurkudis.org/wp-content/uploads/KM_PE18_Lookbook_final_09121719-1B.jpg" data-srcset=""
+          alt="">
+      </div>
+    </div>
+    <div class="image-view">
+    </div>
+  </div>
+</div>
+  <script src="/script/index.js"></script>
+</body>
+
+</html>
