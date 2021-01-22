@@ -31,12 +31,6 @@ code {
 }
 }
 
-@media only screen and (max-width: 920px) {
-  h1 {
-    padding-left: 1ch;
-  }
-}
-
 h1 {
   padding-left: 4ch;
 }

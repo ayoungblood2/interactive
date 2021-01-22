@@ -9,32 +9,11 @@ h2,
 a,
 code {
   font-family: "Inconsolata", monospace;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 1.5em;
   margin-block-start: 0em;
   margin-block-end: 0em;
-}
-
-@media only screen and (max-width: 920px) {
-  p,
-h1,
-h2,
-a,
-code {
-  font-family: "Inconsolata", monospace;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: .5em;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-}
-
-@media only screen and (max-width: 920px) {
-  h1 {
-    padding-left: 1ch;
-  }
 }
 
 h1 {
