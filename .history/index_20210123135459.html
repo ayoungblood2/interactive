@@ -62,7 +62,8 @@
 
   <link rel="stylesheet" type="text/css" href="/style/main.css">
   <link rel="stylesheet" type="text/css" href="/style/img.css">
-
+  <script src="/script/index.js"></script>
+  <script src="/script/logic.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -91,15 +92,13 @@
     <h1>I live in New Haven and work as an independent designer.</h1>
   </div>
 
- 
+  <svg id="svg" xmlns="http://www.w3.org/2000/svg">
+    <polyline id="polyline" fill="none" />
+  </svg>
 
   <div id="mydiv">
     <div id="mydivheader">
-      <div id="hov">&#9786;<span style="letter-spacing: 1px;">&amp;&#8594;</span></div>
-
-      <svg id="svg" xmlns="http://www.w3.org/2000/svg">
-        <polyline id="polyline" fill="none" />
-      </svg>
+      <div class="hov" id="hov">&#9786;<span style="letter-spacing: 1px;">&amp;&#8594;</span></div>
 
       <div style="padding-bottom:20%" id="main">
         <div id="hov2">grab</div>
@@ -409,11 +408,10 @@
 
   <!-- <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script> -->
   <!-- <script src="/script/html2canvas.js"></script> -->
-  <script src="/script/index.js"></script>
-  <script src="/script/logic.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-  
+
 </body>
 
 </html>

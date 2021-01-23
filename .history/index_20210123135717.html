@@ -95,7 +95,7 @@
 
   <div id="mydiv">
     <div id="mydivheader">
-      <div id="hov">&#9786;<span style="letter-spacing: 1px;">&amp;&#8594;</span></div>
+      <div class="hov" id="hov">&#9786;<span style="letter-spacing: 1px;">&amp;&#8594;</span></div>
 
       <svg id="svg" xmlns="http://www.w3.org/2000/svg">
         <polyline id="polyline" fill="none" />
@@ -413,7 +413,31 @@
   <script src="/script/logic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-  
+
+  <script>
+      //screen
+  var mousex = e.pageX + 20; //Get X coordinates
+  var mousey = e.pageY + 10; //Get Y coordinates
+ if((mousey+100)>$(window).height())
+ {
+
+  $('.hov')
+  .css({ top: mousey-100 ,left: mousex })
+
+ }
+ else if((mousex+200)>$(window).width())
+ {
+    $('.hov')
+  .css({ top: mousey ,left: mousex-200})
+
+ }
+ else
+  {
+ $('.hov')
+  .css({ top: mousey, left: mousex })
+
+  }
+  </script>
 </body>
 
 </html>

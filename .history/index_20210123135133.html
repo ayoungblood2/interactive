@@ -4,8 +4,8 @@
 
   <link rel="preload" href="/style/main.css" as="style">
   <link rel="preload" href="/style/img.css" as="style">
-  <link rel="preload" href="/script/index.js" as="script">
-  <link rel="preload" href="/script/logic.js" as="script">
+  <link rel="preload" href="/style/index.js" as="script">
+  <link rel="preload" href="/style/logic.js" as="script">
   <link rel="preload" href="/fonts/Inconsolata.otf" as="font" type="font/otf" crossorigin>
   <link rel="preload" href="/content/polaroid_me.png" as="image" media="(max-width: 1265px)">
   <link rel="preload" href="/content/img01.png" as="image" media="(max-width: 1265px)">
@@ -62,7 +62,8 @@
 
   <link rel="stylesheet" type="text/css" href="/style/main.css">
   <link rel="stylesheet" type="text/css" href="/style/img.css">
-
+  <script src="/script/index.js"></script>
+  <script src="/script/logic.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -83,7 +84,9 @@
   <a onclick="topFunction()" id="myBtn">&#8593;</a>
   <a style="cursor: pointer;" href="javascript:history.go(0)" id="refresh">&#9786;</a>
   <button onclick="myFunction()" id="scrollDown">&#8595;</button>
- 
+
+
+
   <div class="header" id="myHeader">
     <h1>Hi. My name is <a id="resume" href="https://www.averyyoungblood.com/resume.html"><span
           style="text-decoration: underline; cursor: pointer">Aver</span><span
@@ -91,12 +94,11 @@
     <h1>I live in New Haven and work as an independent designer.</h1>
   </div>
 
- 
 
   <div id="mydiv">
     <div id="mydivheader">
       <div id="hov">&#9786;<span style="letter-spacing: 1px;">&amp;&#8594;</span></div>
-
+      
       <svg id="svg" xmlns="http://www.w3.org/2000/svg">
         <polyline id="polyline" fill="none" />
       </svg>
@@ -409,11 +411,10 @@
 
   <!-- <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script> -->
   <!-- <script src="/script/html2canvas.js"></script> -->
-  <script src="/script/index.js"></script>
-  <script src="/script/logic.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-  
+
 </body>
 
 </html>

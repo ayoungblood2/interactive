@@ -78,3 +78,25 @@ function custom(event){
     elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  //screen
+  var mousex = e.pageX + 20; //Get X coordinates
+  var mousey = e.pageY + 10; //Get Y coordinates
+ if((mousey+100)>$(window).height())
+ {
+
+  $('.hov')
+  .css({ top: mousey-100 ,left: mousex })
+
+ }
+ else if((mousex+200)>$(window).width())
+ {
+    $('.hov')
+  .css({ top: mousey ,left: mousex-200})
+
+ }
+ else
+  {
+ $('.hov')
+  .css({ top: mousey, left: mousex })
+
+  }
