@@ -19,7 +19,6 @@ code {
 
 h1 {
   padding-left: 4ch;
-  font-family: "Inconsolata", monospace;
 }
 
 #refresh:hover {
@@ -284,7 +283,6 @@ a:visited {
 
   h1 {
     padding-left: 2ch;
-    font-family: "Inconsolata", monospace;
   }
 
   h2 {
