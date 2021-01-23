@@ -330,14 +330,7 @@ color:transparent;
   color: greenyellow;
   font-size: 34px;
 }
-#hov, #hov2{
-  font-size: 200px;
-  position: fixed;
-  font-family: Inconsolata;
-  display: none;
-  font-style: italic;
-  font-weight: bold;
-  color: greenyellow;
-  z-index: 99999999999999;
+#hov{
+  font-size: 30px;
 }
 }
