@@ -213,15 +213,14 @@ a:visited {
   border: none;
   outline: none;
   color: black;
-  padding: 15px;
+  padding-bottom: 15px;
   border-radius: 4px;
   font-family: Inconsolata;
   text-align: left;
   padding: 32px;
-  z-index: 1;
+  z-index: 9999999;
   font-size: 34;
   padding-left: 4ch;
-  bottom: 9px;
 }
 
 .footer a {
@@ -234,17 +233,19 @@ a:visited {
   transition: opacity 2s linear;
   font-size: 24px;
   letter-spacing: -0.4px;
+  background-color: transparent;
 }
 
 .footer #save:hover {
-  color: greenyellow;
-} 
+  color: black;
+  background-color: transparent;
+}
 
 @media screen and (max-width: 831px) {
   .footer {
     width: 100vw;
     overflow: scroll;
-    height: 12px;
+    height: 24px;
   }
 }
 
@@ -256,4 +257,4 @@ a:visited {
   #save {
     display: none;
   }
-} 
+}

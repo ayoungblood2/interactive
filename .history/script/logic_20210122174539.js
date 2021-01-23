@@ -1,4 +1,4 @@
-// draw mouse
+// mouse
 $(function () {
   let x, y;
   const mousemove = ({ clientX, clientY }) => (x = clientX, y = clientY);
@@ -45,3 +45,6 @@ $(window).mousemove(function (e) {
       $('#polyline').removeClass("active")
     })
 });
+
+
+

@@ -53,7 +53,7 @@ body {
   text-align: left;
   padding: 32px;
   position: fixed;
-  z-index: 9999999999999;
+  z-index: 9999999;
 }
 
 
@@ -154,7 +154,7 @@ div:hover>#hov {
   font-size: 500px;
   font-weight: bold;
   color: greenyellow;
-  z-index: 99999999999999;
+  z-index: 99999999999;
 }
 
 #main {
@@ -208,43 +208,36 @@ a:visited {
 
 .footer {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 15px;
-  border-radius: 4px;
-  font-family: Inconsolata;
-  text-align: left;
-  padding: 32px;
-  z-index: 1;
-  font-size: 34;
-  padding-left: 4ch;
-  bottom: 9px;
+  width: 100%;
+  bottom: var(--body-margin);
+  display: flex;
+  z-index: 200;
 }
 
 .footer a {
-  margin-right: 0
+  margin-right: var(--body-margin);
+  background-color: var(--grey);
 }
 
 .footer #save {
   border-color: transparent !important;
   opacity: 0;
   transition: opacity 2s linear;
-  font-size: 24px;
+  font-size: 2rem;
   letter-spacing: -0.4px;
+  background-color: transparent;
 }
 
 .footer #save:hover {
-  color: greenyellow;
-} 
+  color: black;
+  background-color: transparent;
+}
 
 @media screen and (max-width: 831px) {
   .footer {
     width: 100vw;
     overflow: scroll;
-    height: 12px;
+    height: 63px;
   }
 }
 
@@ -252,8 +245,26 @@ a:visited {
   html {
     font-size: 8px;
   }
-  
-  #save {
-    display: none;
+
+
+  .footer a,
+  .glance a:not(.view-more) {
+    font-size: 2.6rem;
+    padding: 2px 12px 0px 12px;
+    line-height: 3.2rem;
+    height: auto;
+    letter-spacing: inherit;
+    border-width: 1px !important;
   }
-} 
+
+  .footer {
+    display: block;
+    width: 230px;
+  }
+
+  .footer a {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+}

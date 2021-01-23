@@ -208,20 +208,11 @@ a:visited {
 
 .footer {
   position: fixed;
+  width: 100%;
   bottom: 0;
   left: 0;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 15px;
-  border-radius: 4px;
-  font-family: Inconsolata;
-  text-align: left;
-  padding: 32px;
-  z-index: 1;
-  font-size: 34;
-  padding-left: 4ch;
-  bottom: 9px;
+  display: flex;
+  z-index: 200;
 }
 
 .footer a {
@@ -232,28 +223,17 @@ a:visited {
   border-color: transparent !important;
   opacity: 0;
   transition: opacity 2s linear;
-  font-size: 24px;
+  font-size: 2rem;
   letter-spacing: -0.4px;
+  background-color: transparent;
 }
 
 .footer #save:hover {
-  color: greenyellow;
-} 
-
-@media screen and (max-width: 831px) {
-  .footer {
-    width: 100vw;
-    overflow: scroll;
-    height: 12px;
-  }
+  color: black;
+  background-color: transparent;
 }
 
-@media screen and (max-width: 736px) {
-  html {
-    font-size: 8px;
-  }
-  
   #save {
     display: none;
   }
-} 
+

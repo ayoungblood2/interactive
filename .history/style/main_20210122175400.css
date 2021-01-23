@@ -218,13 +218,12 @@ a:visited {
   font-family: Inconsolata;
   text-align: left;
   padding: 32px;
-  z-index: 1;
   font-size: 34;
   padding-left: 4ch;
   bottom: 9px;
 }
 
-.footer a {
+/* .footer a {
   margin-right: 0
 }
 
@@ -238,7 +237,7 @@ a:visited {
 
 .footer #save:hover {
   color: greenyellow;
-} 
+}
 
 @media screen and (max-width: 831px) {
   .footer {
@@ -256,4 +255,4 @@ a:visited {
   #save {
     display: none;
   }
-} 
+} */
