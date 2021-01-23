@@ -335,7 +335,7 @@ color:transparent;
   color: greenyellow;
   font-size: 34px;
 }
-#hov{
+#hov, #hov2{
   font-size: 100px;
   position: fixed;
   font-family: Inconsolata;
@@ -344,9 +344,6 @@ color:transparent;
   font-weight: bold;
   color: greenyellow;
   z-index: 99999999999999;
-}
-#hov2{
-  color: transparent;
 }
 a:link,
 a:visited {
