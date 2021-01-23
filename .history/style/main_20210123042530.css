@@ -158,7 +158,6 @@ div:hover>#hov2 {
   padding: 20px;
   font-style: italic;
   font-size: 400px;
-  line-height: .75em;
   font-weight: bold;
   color: greenyellow;
   z-index: 99999999999999;
@@ -169,6 +168,7 @@ div:hover>#hov2 {
   position: fixed;
   font-style: italic;
   font-size: 400px;
+  line-height: 0;
   font-weight: bold;
   color: greenyellow;
   z-index: 99999999999999;
