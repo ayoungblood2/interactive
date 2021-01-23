@@ -144,6 +144,7 @@ body {
 
 div:hover>#hov {
   display: block;
+  position: absolute;
 }
 
 div:hover>#hov2 {
@@ -153,8 +154,7 @@ div:hover>#hov2 {
 #hov {
   font-family: Inconsolata;
   display: none;
-  position: fixed;
-  padding: 20px;
+  position: absolute;
   font-style: italic;
   font-size: 500px;
   font-weight: bold;
@@ -172,6 +172,9 @@ div:hover>#hov2 {
   z-index: 99999999999999;
 }
 
+#main {
+  cursor: none;
+}
 
 #refresh {
   position: absolute;

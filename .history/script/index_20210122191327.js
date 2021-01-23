@@ -77,3 +77,26 @@ function custom(event){
     var elmnt = document.getElementById("image-container");
     elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
+
+
+  //scroll continuos
+  var bgHeight = 1600; // pixel height of background image
+
+$(document).ready(function() {   
+    $('body').height( bgHeight + $(window).height() );
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() >= ($('body').height() - $(window).height()) ) {
+            $(window).scrollTop(1);
+        }
+        else if ( $(window).scrollTop() == 0 ) {
+            $(window).scrollTop($('body').height() - $(window).height() -1);
+        }    
+    });
+});
+$(window).r
+
+
+
+
+
+  

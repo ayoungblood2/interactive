@@ -111,11 +111,11 @@ body {
 
 #mydiv {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 #mydivheader {
-  z-index: -10;
+  z-index: 1;
 }
 
 

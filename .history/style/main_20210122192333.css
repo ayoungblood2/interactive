@@ -31,6 +31,7 @@ h1 {
 }
 
 body {
+  height: 100%;
   overflow: scroll;
   /* Add the ability to scroll */
   scroll-behavior: smooth;
@@ -154,7 +155,6 @@ div:hover>#hov2 {
   font-family: Inconsolata;
   display: none;
   position: fixed;
-  padding: 20px;
   font-style: italic;
   font-size: 500px;
   font-weight: bold;
@@ -172,6 +172,9 @@ div:hover>#hov2 {
   z-index: 99999999999999;
 }
 
+#main {
+  cursor: none;
+}
 
 #refresh {
   position: absolute;
@@ -269,3 +272,10 @@ a:visited {
     display: none;
   }
 }  */
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

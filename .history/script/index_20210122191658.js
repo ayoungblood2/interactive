@@ -77,3 +77,34 @@ function custom(event){
     var elmnt = document.getElementById("image-container");
     elmnt.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
+
+
+  //scroll continuos
+  window.scroll(1800,1800);
+
+  function resetWindow() {
+  
+      if (window.pageXOffset < 900) {
+      window.scrollBy(900,0);
+      }
+  
+      if (window.pageXOffset > 2700) {
+      window.scrollBy(-900,0);
+      }
+  
+      if (window.pageYOffset < 900) {
+      window.scrollBy(0,900);
+      }
+  
+      if (window.pageYOffset > 2700) {
+      window.scrollBy(0,-900);
+      }
+  }
+  
+  window.addEventListener('scroll',resetWindow,true);
+
+
+
+
+
+  

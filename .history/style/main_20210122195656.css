@@ -152,7 +152,7 @@ div:hover>#hov2 {
 
 #hov {
   font-family: Inconsolata;
-  display: none;
+  display: block;
   position: fixed;
   padding: 20px;
   font-style: italic;

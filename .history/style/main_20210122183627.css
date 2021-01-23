@@ -34,7 +34,7 @@ body {
   overflow: scroll;
   /* Add the ability to scroll */
   scroll-behavior: smooth;
-  }
+}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .example::-webkit-scrollbar {
@@ -78,7 +78,7 @@ body {
   }
 
   #svg {
-    z-index: 1;
+    z-index: 999999999;
     width: 200vw;
     height: 100vh;
     position: fixed;
@@ -88,11 +88,11 @@ body {
   }
 
   #polyline {
-    z-index: 1;
+    z-index: 999999999;
     stroke-dasharray: 0;
     stroke-width: 1;
     stroke-linecap: round;
-    stroke: black !important;
+    stroke: var(--cursorcolors) !important;
   }
 
   #polyline.active {
@@ -146,25 +146,10 @@ div:hover>#hov {
   display: block;
 }
 
-div:hover>#hov2 {
-  display: block;
-}
-
 #hov {
   font-family: Inconsolata;
   display: none;
   position: fixed;
-  padding: 20px;
-  font-style: italic;
-  font-size: 500px;
-  font-weight: bold;
-  color: greenyellow;
-  z-index: 99999999999999;
-}
-#hov2 {
-  font-family: Inconsolata;
-  display: none;
-  position: fixed;
   font-style: italic;
   font-size: 500px;
   font-weight: bold;
@@ -172,6 +157,9 @@ div:hover>#hov2 {
   z-index: 99999999999999;
 }
 
+#main {
+  cursor: none;
+}
 
 #refresh {
   position: absolute;
@@ -236,7 +224,7 @@ a:visited {
   bottom: 9px;
 }
 
-/* .footer a {
+.footer a {
   margin-right: 0
 }
 
@@ -268,4 +256,4 @@ a:visited {
   #save {
     display: none;
   }
-}  */
+} 

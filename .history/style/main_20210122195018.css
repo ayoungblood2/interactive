@@ -153,8 +153,7 @@ div:hover>#hov2 {
 #hov {
   font-family: Inconsolata;
   display: none;
-  position: fixed;
-  padding: 20px;
+  position: absolute;
   font-style: italic;
   font-size: 500px;
   font-weight: bold;
@@ -164,7 +163,7 @@ div:hover>#hov2 {
 #hov2 {
   font-family: Inconsolata;
   display: none;
-  position: fixed;
+  position: absolute;
   font-style: italic;
   font-size: 500px;
   font-weight: bold;
