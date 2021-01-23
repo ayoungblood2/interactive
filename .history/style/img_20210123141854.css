@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.infinite {
+    width: 100%;
+    height: 770px;
+    background: #ffffff;
+}
+
+.infinite div {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.infinite div:nth-child(7n + 1){
+    background: #ffffff;
+}
+.infinite div:nth-child(7n + 2){
+    background: #ffffff;
+}
+.infinite div:nth-child(7n + 3){
+    background: #ffffff;
+}
+.infinite div:nth-child(7n + 4){
+    background: #ffffff;
+}
+.infinite div:nth-child(7n + 5){
+    background: #ffffff;
+}
+.infinite div:nth-child(7n + 6){
+    background: #ffffff;
+}
+.infinite div:nth-child(7n + 7){
+    background: #ffffff;
+}

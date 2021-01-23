@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    animation: slide 60s linear infinite;
+}
+@keyframes img{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
