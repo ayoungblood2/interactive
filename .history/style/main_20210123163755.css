@@ -289,6 +289,8 @@ a:visited {
   h1 {
     padding-left: 2ch;
     font-family: "Inconsolata", monospace;
+    width: 50%;
+    max-width: 500px;
   }
 
   h2 {
@@ -320,11 +322,11 @@ a:visited {
     font-family: Inconsolata;
 color:transparent;
 }
-/* #scrollDown:hover {
+#scrollDown:hover {
   font-family: Inconsolata;
   color: greenyellow;
   font-size: 24px;
-} */
+}
 #myBtn:hover {
   font-family: Inconsolata;
   color: greenyellow;
