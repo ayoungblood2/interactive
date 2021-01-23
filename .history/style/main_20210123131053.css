@@ -290,7 +290,6 @@ a:visited {
     padding-left: 2ch;
     font-family: "Inconsolata", monospace;
     width: 50%;
-    max-width: 500px;
   }
 
   h2 {
@@ -319,21 +318,17 @@ a:visited {
     display: block;
   }
   #scrollDown{
-    font-family: Inconsolata;
-color:black;
+color:transparent;
 }
 #scrollDown:hover {
-  font-family: Inconsolata;
   color: greenyellow;
   font-size: 24px;
 }
 #myBtn:hover {
-  font-family: Inconsolata;
   color: greenyellow;
   font-size: 24px;
 }
 #refresh:hover {
-  font-family: Inconsolata;
   color: greenyellow;
   font-size: 34px;
 }
@@ -349,7 +344,6 @@ color:black;
 }
 a:link,
 a:visited {
-  font-family: Inconsolata;
   color: black;
   text-decoration: none;
 }

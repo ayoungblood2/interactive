@@ -319,21 +319,17 @@ a:visited {
     display: block;
   }
   #scrollDown{
-    font-family: Inconsolata;
 color:black;
 }
 #scrollDown:hover {
-  font-family: Inconsolata;
   color: greenyellow;
   font-size: 24px;
 }
 #myBtn:hover {
-  font-family: Inconsolata;
   color: greenyellow;
   font-size: 24px;
 }
 #refresh:hover {
-  font-family: Inconsolata;
   color: greenyellow;
   font-size: 34px;
 }
@@ -349,7 +345,6 @@ color:black;
 }
 a:link,
 a:visited {
-  font-family: Inconsolata;
   color: black;
   text-decoration: none;
 }
