@@ -62,8 +62,10 @@ body {
 
 .text_container {
   margin: 1em;
-
-  z-index: 999999999999999999999;
+  /* padding: 32px; */
+  position: fixed;
+  z-index: 9999999999999;
+  /* text-size-adjust: .50; */
 }
 
 /* selection properties*/
