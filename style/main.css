@@ -63,6 +63,7 @@ body {
 .text_container {
   margin: 1em;
   margin-bottom: 2em;
+  z-index: 999999999999999999999;
 }
 
 /* selection properties*/
