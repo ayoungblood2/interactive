@@ -79,7 +79,12 @@
 </head>
 
 <body style="margin: 0; padding: 0;" class="example">
- 
+
+  <div>
+    <button id="jsstyle" 
+    onclick="shuffle();">Show Image</button> 
+    </div>
+
   <a onclick="topFunction()" id="myBtn">&#8593;</a>
   <a style="cursor: pointer;" href="javascript:history.go(0)" id="refresh">&#9786;</a>
   <button onclick="myFunction()" id="scrollDown">&#8595;</button>
@@ -101,8 +106,9 @@
         </svg>
 
         <div style="padding-bottom:20%" id="main">
-          <div id="hov2" style="width:100%; height:100%">grab</div>
+          <div id="hov">grab
           <img class="lazyautosizes lazyloaded" data-src="/content/polaroid_me.png" sizes="1265px" src="/content/polaroid_me.png">
+        </div>
         </div>
         <img src="/content/Scans.gif">
         <div class="image-view">
