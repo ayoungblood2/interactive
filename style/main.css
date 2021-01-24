@@ -56,10 +56,13 @@ body {
   position: fixed;
   z-index: 9999999999999;
   /* text-size-adjust: .50; */
-  margin: 1em;
-  padding-left: 4ch;
+
 }
 
+.text_container {
+  margin: 1em;
+  margin-bottom: 2em;
+}
 
 /* selection properties*/
 ::selection {
@@ -257,6 +260,8 @@ a:visited {
   height: 10%;
   width: 100%;
 }
+
+
 
 /* .footer a {
   margin-right: 0
