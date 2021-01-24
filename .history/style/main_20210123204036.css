@@ -248,11 +248,8 @@ a:visited {
 
 #separation:hover{
   letter-spacing: 1em; 
-  margin:0;
-        position: relative;
-        bottom: 0;
-        height: 10%;
-        width: 100%;
+  widows: 50%;
+  display: block;
 }
 
 /* .footer a {
