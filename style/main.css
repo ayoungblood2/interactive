@@ -55,9 +55,9 @@ body {
   /* padding: 32px; */
   position: fixed;
   z-index: 9999999999999;
-  text-size-adjust: .50;
+  /* text-size-adjust: .50; */
   margin: 1em;
-  padding-left: 2ch;
+  padding-left: 4ch;
 }
 
 
