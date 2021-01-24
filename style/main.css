@@ -28,7 +28,7 @@ h1 {
   font-size: 100px;
 }
 
-#resume:hover {
+.resume:hover {
   color: greenyellow;
 }
 
