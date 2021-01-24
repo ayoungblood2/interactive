@@ -52,10 +52,12 @@ body {
 
 .header {
   text-align: left;
-  padding: 32px;
+  /* padding: 32px; */
   position: fixed;
   z-index: 9999999999999;
   text-size-adjust: .50;
+  margin: 1em;
+  padding-left: 2ch;
 }
 
 
