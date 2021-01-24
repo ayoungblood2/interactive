@@ -35,7 +35,7 @@ body {
   overflow: scroll;
   /* Add the ability to scroll */
   scroll-behavior: smooth;
-}
+  }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .example::-webkit-scrollbar {
@@ -164,7 +164,6 @@ div:hover>#hov2 {
   color: greenyellow;
   z-index: 99999999999999;
 }
-
 #hov2 {
   font-family: Inconsolata;
   display: none;
@@ -240,20 +239,20 @@ a:visited {
   bottom: 9px;
 }
 
-#separation {
+#separation{
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
 
-#separation:hover {
-  letter-spacing: 1em;
-  margin: 0;
-  position: relative;
-  bottom: 0;
-  height: 10%;
-  width: 100%;
+#separation:hover{
+  letter-spacing: 1em; 
+  margin:0;
+        position: relative;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
 }
 
 /* .footer a {
@@ -292,18 +291,13 @@ a:visited {
 
 @media only screen and (max-width: 600px) {
 
-  html,
-  body {
+  html, body {
     font-family: "Inconsolata", monospace;
     height: 100%;
     width: 100%;
   }
 
-  p,
-  h1,
-  h2,
-  a,
-  code {
+  p, h1, h2, a, code {
     font-size: 14px;
     font-family: "Inconsolata", monospace;
   }
@@ -318,10 +312,7 @@ a:visited {
     text-indent: -2ch;
   }
 
-  img,
-  video,
-  audio,
-  iframe {
+  img, video, audio, iframe {
     display: flex;
   }
 
@@ -341,64 +332,59 @@ a:visited {
   .white_space {
     display: block;
   }
-
-  #scrollDown {
+  #scrollDown{
     font-family: Inconsolata;
-    color: transparent;
-  }
-
-  /* #scrollDown:hover {
+color:transparent;
+}
+/* #scrollDown:hover {
   font-family: Inconsolata;
   color: greenyellow;
   font-size: 24px;
 } */
-  #myBtn:hover {
-    font-family: Inconsolata;
-    color: greenyellow;
-    font-size: 24px;
-  }
+#myBtn:hover {
+  font-family: Inconsolata;
+  color: greenyellow;
+  font-size: 24px;
+}
+#refresh:hover {
+  font-family: Inconsolata;
+  color: greenyellow;
+  font-size: 34px;
+}
+#hov{
+  font-size: 100px;
+  position: fixed;
+  font-family: Inconsolata;
+  display: none;
+  font-style: italic;
+  font-weight: bold;
+  color: greenyellow;
+  z-index: 99999999999999;
+}
+#hov2{
+  color: transparent;
+}
+a:link,
+a:visited {
+  font-family: Inconsolata;
+  color: black;
+  text-decoration: none;
+}
+#separation{
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  font-size:10px;
+}
 
-  #refresh:hover {
-    font-family: Inconsolata;
-    color: greenyellow;
-    font-size: 34px;
-  }
-
-  #hov {
-    font-size: 100px;
-    position: fixed;
-    font-family: Inconsolata;
-    display: none;
-    font-style: italic;
-    font-weight: bold;
-    color: greenyellow;
-    z-index: 99999999999999;
-  }
-
-  #hov2 {
-    color: transparent;
-  }
-
-  a:link,
-  a:visited {
-    font-family: Inconsolata;
-    color: black;
-    text-decoration: none;
-  }
-
-  #separation {
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
-  }
-
-  #separation:hover {
-    letter-spacing: 0em;
-    margin: 0;
-    position: relative;
-    bottom: 0;
-    height: 10%;
-    width: 100%;
-  }
+#separation:hover{
+  letter-spacing: 1em; 
+  margin:0;
+        position: relative;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
+        font-size:10px;
+}
 }

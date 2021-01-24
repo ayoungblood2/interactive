@@ -391,14 +391,16 @@ a:visited {
     -moz-transition: none;
     -o-transition: none;
     transition: none;
+    font-size: 10px;
   }
 
   #separation:hover {
-    letter-spacing: 0em;
+    letter-spacing: 1em;
     margin: 0;
     position: relative;
     bottom: 0;
     height: 10%;
     width: 100%;
+    font-size: 10px;
   }
 }

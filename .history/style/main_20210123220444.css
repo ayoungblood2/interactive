@@ -391,6 +391,7 @@ a:visited {
     -moz-transition: none;
     -o-transition: none;
     transition: none;
+    text-size-adjust: 5;
   }
 
   #separation:hover {
