@@ -20,6 +20,7 @@ code {
 h1 {
   padding-left: 4ch;
   font-family: "Inconsolata", monospace;
+  margin: 1em;
 }
 
 #refresh:hover {
