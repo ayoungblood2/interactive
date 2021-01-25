@@ -374,6 +374,9 @@ a:visited {
     display: flex;
   }
 
+  img { 
+    position: absolute; 
+} 
 
   .slide_container {
     display: flex;
