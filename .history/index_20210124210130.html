@@ -470,9 +470,10 @@
       <div class="footer" data-html2canvas-ignore="true">
         <button style="cursor: pointer;background-color:transparent;" onClick="history.go(0);"
           id="refresh">&#9786;</button>
-        <!-- <a onClick="window.location.reload()" id="save" style="opacity: 1;">
+        <a onClick="window.location.reload()" id="save" style="opacity: 1;">
           Hit [ RETURN / ENTER ] to save
-        </a> -->
+          <!-- Hit "S" to save -->
+        </a>
       </div>
     </h1>
   </div>
@@ -515,7 +516,7 @@
           var x = event.which || event.keyCode;
           if (x == 13) {
             alert("Your drawing will download shortly. Enjoy!\n*NOTE: Make sure you're at the top of the site to retrieve drawing*");
-            saveImage();
+            savePDF();
           }
           // console.log("The Unicode value is: " + x);
         }
@@ -705,7 +706,7 @@
         // draw the image onto the canvas
         canvas.getContext('2d').drawImage(img, 0, 0);
 
-        saveAs(canvas.toDataURL(), 'avery-youngblood-img.png');
+        saveAs(canvas.toDataURL(), 'avery-youngblood-img.pdf');
       });
     }
   </script>
