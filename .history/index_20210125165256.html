@@ -108,7 +108,7 @@
   </div>
 
 
-  <div class="">
+  <div class="" id="screenshot">
     <div id="mydiv">
       <div id="mydivheader">
         <div id="hov">&#9786;<span style="letter-spacing: 1px;">&amp;&#8594;</span></div>
@@ -474,9 +474,9 @@
       <div class="footer" data-html2canvas-ignore="true">
         <button style="cursor: pointer;background-color:transparent;" onClick="history.go(0);"
           id="refresh">&#9786;</button>
-        <!-- <a onClick="window.location.reload()" id="save" style="opacity: 1;">
+        <a onClick="window.location.reload()" id="screenshot" style="opacity: 1;">
           Hit [ RETURN / ENTER ] to save
-        </a> -->
+        </a>
       </div>
     </h1>
   </div>
@@ -496,7 +496,13 @@
   <script src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
   <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script>
 
-
+  <script>
+    function makeScreenshot() {
+        html2canvas(document.getElementById("screenshot"), {scale: 1}).then(canvas => {
+            document.body.appendChild(canvas);
+        });
+    }
+</script>
 
   <script>
     // let avgX = [];

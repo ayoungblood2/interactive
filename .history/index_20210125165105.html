@@ -496,7 +496,13 @@
   <script src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
   <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script>
 
-
+  <script>
+    function makeScreenshot() {
+        html2canvas(document.getElementById("screenshot"), {scale: 1}).then(canvas => {
+            document.body.appendChild(canvas);
+        });
+    }
+</script>
 
   <script>
     // let avgX = [];

@@ -89,11 +89,10 @@
 
 <body style="margin: 0; padding: 0;" class="example" id="">
 
-
-  <!-- <button id="next" onclick="next()">next</button>
-<button id="prev" onclick="prev()">prev</button>
-<textarea id="textarea" rows="1" cols="40">
-</textarea> -->
+  <input type="submit" value="Take Screenshot Of Div" onclick="capture();" />
+<form method="POST" enctype="multipart/form-data" action="save.php" id="myForm">
+    <input type="hidden" name="img_val" id="img_val" value="" />
+</form>
 
   <button onclick="topFunction()" id="myBtn">&#8593;</button>
   <button onclick="myFunction()" id="scrollDown">&#8595;</button>
@@ -108,7 +107,7 @@
   </div>
 
 
-  <div class="">
+  <div id="target">
     <div id="mydiv">
       <div id="mydivheader">
         <div id="hov">&#9786;<span style="letter-spacing: 1px;">&amp;&#8594;</span></div>
@@ -493,10 +492,21 @@
   <script src="https://rawgithub.com/davidkonrad/toUnicodeVariant/master/toUnicodeVariant.js"></script>
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
+  <script type="text/javascript" src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
   <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script>
 
-
+  <script type="text/javascript">
+    function capture() {
+      $('#target').html2canvas({
+        onrendered: function (canvas) {
+                  //Set hidden field's value to image data (base-64 string)
+          $('#img_val').val(canvas.toDataURL("image/png"));
+                  //Submit the form manually
+          document.getElementById("myForm").submit();
+        }
+      });
+    }
+  </script>
 
   <script>
     // let avgX = [];

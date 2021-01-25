@@ -87,13 +87,12 @@
 
 
 
-<body style="margin: 0; padding: 0;" class="example" id="">
+<body style="margin: 0; padding: 0;" class="example" id="target">
 
-
-  <!-- <button id="next" onclick="next()">next</button>
-<button id="prev" onclick="prev()">prev</button>
-<textarea id="textarea" rows="1" cols="40">
-</textarea> -->
+  <input type="submit" value="Take Screenshot Of Div" onclick="capture();" />
+<form method="POST" enctype="multipart/form-data" action="save.php" id="myForm">
+    <input type="hidden" name="img_val" id="img_val" value="" />
+</form>
 
   <button onclick="topFunction()" id="myBtn">&#8593;</button>
   <button onclick="myFunction()" id="scrollDown">&#8595;</button>
@@ -493,7 +492,7 @@
   <script src="https://rawgithub.com/davidkonrad/toUnicodeVariant/master/toUnicodeVariant.js"></script>
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
+  <script type="text/javascript" src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
   <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script>
 
 
