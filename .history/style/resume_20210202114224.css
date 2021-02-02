@@ -87,7 +87,44 @@ HTML SCSSResult Skip Results Iframe EDIT ON .flex-grid {
   /* background-color:black; */
 }
 
+/* Horizontal Scroll */
 
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+div{
+  box-sizing:border-box;
+}
+
+
+.flex-grid .horizontal-scroll-wrapper{
+  /* position:absolute; */
+  display:block;
+  width:80px;
+  max-height:100%;
+  margin:0;
+border: black thin solid;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-80px);
+  transform-origin:right top;
+}
+.flex-grid .horizontal-scroll-wrapper > div{
+  display:block;
+  padding:5px;
+  transform:rotate(90deg);
+  transform-origin: right top;
+}
+
+.squares{
+  padding:60px 0 0 0;
+}
+
+.squares > div{
+  width:60px;
+  /* height:60px; */
+  margin:10px;
+}
 
 
 /* Typography */

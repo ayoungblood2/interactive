@@ -56,38 +56,86 @@ body {
 
 /* Grid */
 
-.flex-grid {
+.flex-grid { 
   margin: 0 0 20px 0;
 }
-
 .col {
   padding: 20px;
   border: black thin solid;
 }
 
-HTML SCSSResult Skip Results Iframe EDIT ON .flex-grid {
+HTML SCSSResult Skip Results Iframe
+EDIT ON
+.flex-grid {
   display: flex;
 }
-
 .flex-grid .col {
   flex: 1;
 }
-
 .flex-grid-thirds {
   display: flex;
   justify-content: space-between;
 }
-
 .flex-grid-thirds .col {
   width: 33%;
 }
 
 .col:hover {
-  color: greenyellow;
+  color:greenyellow;
   /* background-color:black; */
 }
 
+/* Horizontal Scroll */
 
+
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+.horizontal-scroll-wrapper{
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  width:80px;
+  max-height:500px;
+  margin: 20px;
+ border: black thin solid;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg) translateY(-80px);
+  transform-origin:right top;
+}
+.horizontal-scroll-wrapper > div{
+  display:block;
+ 
+  padding:20px;
+  transform:rotate(90deg);
+  transform-origin: right top;
+}
+
+.squares{
+  padding:60px 0 0 0;
+}
+
+.squares > div{
+  width:60px;
+  height:60px;
+  margin:10px;
+}
+
+.rectangles{
+  top:100px;
+  padding:100px 0 0 0;
+}
+.rectangles > div{
+  width:140px;
+  height:60px;
+  margin:50px 10px;
+  padding:5px;
+  background:#cab;
+  transform:rotate(90deg) translateY(80px);
+  transform-origin: right top;
+}
 
 
 /* Typography */
@@ -211,11 +259,9 @@ a:visited#mail {
 }
 
 @media (max-width: 400px) {
-
   .flex-grid,
   .flex-grid-thirds {
     display: block;
-
     .col {
       width: 100%;
       margin: 0 0 10px 0;
