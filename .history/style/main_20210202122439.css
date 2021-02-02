@@ -402,10 +402,10 @@ a:visited {
   }
 
 
-  #refresh {
+  #refresh:hover {
     font-family: Inconsolata;
-    color: transparent;
-    font-size: 0px;
+    color: greenyellow;
+    font-size: 34px;
   }
 
   #hov {
