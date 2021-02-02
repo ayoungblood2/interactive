@@ -25,10 +25,9 @@
 }
 
 body {
-  /* overflow-y: scroll; */
+  overflow: scroll;
   /* Add the ability to scroll */
-  /* scroll-behavior: smooth; */
-  overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -57,7 +56,6 @@ body {
 
 .flex-grid { 
   margin: 0 0 20px 0;
-  overflow-x: scroll;
 }
 .col {
   padding: 20px;
@@ -77,12 +75,7 @@ EDIT ON
   justify-content: space-between;
 }
 .flex-grid-thirds .col {
-  width: 33%;
-}
-
-.col:hover {
-  color:greenyellow;
-  /* background-color:black; */
+  width: 32%;
 }
 
 
@@ -175,7 +168,7 @@ a:visited#mail {
 
 /* Mobile */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 600px) {
 
   html,
   body {
