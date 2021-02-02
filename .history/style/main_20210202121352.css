@@ -218,7 +218,7 @@ div:hover>#hov2 {
 }
 
 
-#refresh {
+#refresh:before {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -235,6 +235,7 @@ div:hover>#hov2 {
   font-size: 34;
   background-color: none;
   padding-left: 4ch;
+  content:'&#9786';
 }
 
 
@@ -408,7 +409,9 @@ a:visited {
     font-size: 24px;
   }
 
-
+  #refresh:before{
+    
+  }
   #refresh:hover {
     font-family: Inconsolata;
     color: greenyellow;
