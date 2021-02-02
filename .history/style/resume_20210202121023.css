@@ -214,14 +214,12 @@ a:visited#mail {
   .flex-grid,
   .flex-grid-thirds {
     display: block;
-  }
-    .flex-grid,
-  .flex-grid-thirds .col {
+    .col {
       width: 100%;
       margin: 0 0 10px 0;
     }
   }
-
+}
 
 
 /* Above code modified from Nicholas Weltyk's journal structure obtained from https://weltyk.com/journal/ */

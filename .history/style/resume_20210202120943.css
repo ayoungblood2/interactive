@@ -211,17 +211,20 @@ a:visited#mail {
 }
 
 @media (max-width: 400px) {
+
   .flex-grid,
   .flex-grid-thirds {
     display: block;
   }
-    .flex-grid,
-  .flex-grid-thirds .col {
+    .col {
       width: 100%;
       margin: 0 0 10px 0;
     }
+    .flex-grid-thirds .col {
+      width: 32%;
+    }
+    
   }
-
 
 
 /* Above code modified from Nicholas Weltyk's journal structure obtained from https://weltyk.com/journal/ */
