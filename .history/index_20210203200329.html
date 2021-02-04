@@ -89,12 +89,7 @@
 
 <body style="margin: 0; padding: 0;" class="example" id="">
 
-  <!-- <button type="button" id="btnDisplay">Display</button>
-  <button type="button" id="btnDownload">Download</button>
-  <hr>
-  <canvas id="myCanvas"></canvas>
-  <img src="" id="imgConverted"> -->
-  
+
   <!-- <button id="next" onclick="next()">next</button>
 <button id="prev" onclick="prev()">prev</button>
 <textarea id="textarea" rows="1" cols="40">
@@ -109,7 +104,7 @@
         href="https://www.averyyoungblood.com/resume.html">&#9729;</a> <a class="resume"
         aria-label="resume + information" href="https://www.averyyoungblood.com/resume.html"><span
           style="text-decoration: underline;">Aver</span><span style="text-decoration: none;">y</span></a>
-      is an independent designer.</h1>
+     is an independent designer.</h1>
   </div>
 
   <!-- <div class="text_container">
@@ -511,9 +506,9 @@
       <div class="footer" data-html2canvas-ignore="true">
         <button style="cursor: pointer;background-color:transparent;" onClick="history.go(0);"
           id="refresh">&#9786;</button>
-        <!-- <a onClick="window.location.reload()" id="save" style="opacity: 1;">
+        <a onClick="window.location.reload()" id="save" style="opacity: 1;">
           Hit [ RETURN / ENTER ] to save
-        </a> -->
+        </a>
       </div>
     </h1>
   </div>
@@ -533,38 +528,7 @@
   <script src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
   <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script>
 
-  <!-- <script>
-    const btnDisplay = document.querySelector("#btnDisplay");
-    const btnDownload = document.querySelector("#btnDownload");
-    const imgConverted = document.querySelector("#imgConverted");
-    const myCanvas = document.querySelector("#myCanvas");
-    const ctx = myCanvas.getContext("2d");
 
-    ctx.font = "50px Roboto";
-    ctx.fillStyle = "red";
-    ctx.fillText("dcode", 100, 100);
-    ctx.fillRect(200, 150, 150, 75);
-
-    btnDisplay.addEventListener("click", function () {
-      const dataURI = myCanvas.toDataURL("image/jpeg");
-      imgConverted.src = dataURI;
-    });
-
-    btnDownload.addEventListener("click", function() {
-      // IE/Edge Support (PNG Only)
-      if (window.navigator.msSaveBlob) {
-      window.navigator.msSaveBlob(myCanvas.msToBlob(), "canvas-image.png");
-    } else {
-      const a = document.createElement("a");
-
-      document.body.appendChild(a);
-      a.href = myCanvas.toDataURL("image/jpeg", 0.1);
-      a.download = "canvas-image.jpg";
-      a.click();
-      document.body.removeChild(a);
-    }
-    });
-  </script> -->
 
   <script>
     // let avgX = [];

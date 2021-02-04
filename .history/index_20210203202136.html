@@ -89,12 +89,11 @@
 
 <body style="margin: 0; padding: 0;" class="example" id="">
 
-  <!-- <button type="button" id="btnDisplay">Display</button>
+  <button type="button" id="btnDisplay">Display</button>
   <button type="button" id="btnDownload">Download</button>
   <hr>
   <canvas id="myCanvas"></canvas>
-  <img src="" id="imgConverted"> -->
-  
+  <img src="" id="imgConverted">
   <!-- <button id="next" onclick="next()">next</button>
 <button id="prev" onclick="prev()">prev</button>
 <textarea id="textarea" rows="1" cols="40">
@@ -533,7 +532,7 @@
   <script src="/node_modules/html2canvas/dist/jquery.plugin.html2canvas.js"></script>
   <script type="text/javascript" src="/node_modules/html2canvas/dist/html2canvas.js"></script>
 
-  <!-- <script>
+  <script>
     const btnDisplay = document.querySelector("#btnDisplay");
     const btnDownload = document.querySelector("#btnDownload");
     const imgConverted = document.querySelector("#imgConverted");
@@ -548,23 +547,23 @@
     btnDisplay.addEventListener("click", function () {
       const dataURI = myCanvas.toDataURL("image/jpeg");
       imgConverted.src = dataURI;
+      console.log(dataURI);
     });
 
-    btnDownload.addEventListener("click", function() {
-      // IE/Edge Support (PNG Only)
+    btnDownload.addEventListener("click", funciton(){
       if (window.navigator.msSaveBlob) {
       window.navigator.msSaveBlob(myCanvas.msToBlob(), "canvas-image.png");
     } else {
       const a = document.createElement("a");
-
       document.body.appendChild(a);
       a.href = myCanvas.toDataURL("image/jpeg", 0.1);
       a.download = "canvas-image.jpg";
       a.click();
       document.body.removeChild(a);
     }
+
     });
-  </script> -->
+  </script>
 
   <script>
     // let avgX = [];
