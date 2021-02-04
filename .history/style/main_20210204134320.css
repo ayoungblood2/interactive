@@ -96,6 +96,23 @@ body {
 }
 
 
+#smile:before {
+  font-family: Inconsolata;
+  content: "\263A";
+}
+
+#smile:hover:before {
+  font-family: Wingdings-Regular-2;
+  content: '3';
+  color: greenyellow;
+  text-decoration: none;
+}
+
+button:visited#smile {
+  font-family: Inconsolata;
+  content: "h";
+}
+
 
 .header {
   text-align: left;
@@ -257,19 +274,6 @@ a:visited {
   color: black;
   text-decoration: none;
 }
-
-#smile:before {
-  font-family: Inconsolata;
-  content: "\263A";
-}
-
-#smile:hover:before {
-  font-family: Wingdings-Regular-2;
-  content: '3';
-  color: greenyellow;
-  text-decoration: none;
-}
-
 
 #scrollDown {
   position: fixed;

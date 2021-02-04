@@ -258,19 +258,6 @@ a:visited {
   text-decoration: none;
 }
 
-#smile:before {
-  font-family: Inconsolata;
-  content: "\263A";
-}
-
-#smile:hover:before {
-  font-family: Wingdings-Regular-2;
-  content: '3';
-  color: greenyellow;
-  text-decoration: none;
-}
-
-
 #scrollDown {
   position: fixed;
   top: 20px;
@@ -441,7 +428,7 @@ a:visited {
     position: fixed;
     font-family: Inconsolata;
     display: none;
-    /* font-style: italic; */
+    font-style: italic;
     font-weight: bold;
     color: greenyellow;
     z-index: 99999999999999;
