@@ -431,8 +431,8 @@ a:visited {
 
 
   #refresh {
-    /* color: transparent; */
-    font-size: 18px;
+    color: transparent;
+    font-size: 14px;
     /* display: none; */
   }
 

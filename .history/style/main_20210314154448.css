@@ -430,11 +430,11 @@ a:visited {
   }
 
 
-  #refresh {
-    /* color: transparent; */
-    font-size: 18px;
-    /* display: none; */
-  }
+  /* #refresh {
+    color: transparent;
+    font-size: 0px;
+    display: none;
+  } */
 
   #hov {
     font-size: 100px;
