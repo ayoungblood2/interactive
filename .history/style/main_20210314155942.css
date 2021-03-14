@@ -431,9 +431,10 @@ a:visited {
 
 
   #refresh {
-    font-size: 24px;
+    /* color: transparent; */
+    font-size: 18px;
+    /* display: none; */
   }
- 
 
   #hov {
     font-size: 100px;
