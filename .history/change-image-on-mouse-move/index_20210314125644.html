@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Change image on mouse move using javascript and Jquery</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.shuffle-images.js"></script>
+  <style>
+    .main {
+      position: relative;
+    }
+
+    .shuffle-me {
+      display: block;
+      position: relative;
+      float: left;
+    }
+
+    .shuffle-group {
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .shuffle-group .shuffle-me {
+      float: left;
+      margin: 5px;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $(".shuffle-me").shuffleImages({
+        target: ".images > img"
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="main">
+
+      <div class="container">
+
+        <div class="shuffle-group">
+          <div data-si-mousemove-trigger="10" class="shuffle-me">
+            <div class="images">
+              <img src="content/homepage.png">
+              <img src="content/img01.png">
+              <img src="content/img02.png">
+              <img src="content/img03.png">
+              <img src="content/img04.png">
+              <img src="content/img04.png">
+              <img src="content/img04.png">
+              <img src="content/img04.png">
+              <img src="content/img04.png">
+              <img src="content/img04.png">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

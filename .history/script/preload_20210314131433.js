@@ -44,7 +44,9 @@ const pictures = [
     "/content/img42.png",
     "/content/img43.png",
     "/content/img44.png",
+    "/content/img44_old.png",
     "/content/img45.png",
+    "/content/img45_old.png",
     "/content/img46.png",
     // "/content/img47.png",
     "/content/img48.png",
@@ -54,11 +56,17 @@ const pictures = [
     // "/content/img52.png",
     // "/content/img52.jpeg",
     "/content/img53.png",
+    "/content/img53.jpeg",
     // "/content/img54.png",
     "/content/img55.png",
+    "/content/img55.jpeg",
+    "/content/list-website.mov",
+    "/content/list-website.mp4",
     "/content/polaroid_me.png",
+    "/content/review-website.mov",
+    "/content/review-website.mp4",
     "/content/Scans.gif",
-    "/content/sonic_rupture.gif"
+    "/content/sonic_rupture.gif",
 ]
 
 var preloadedImages = [];

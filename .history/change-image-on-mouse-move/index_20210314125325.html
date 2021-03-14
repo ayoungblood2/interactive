@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Change image on mouse move using javascript and Jquery</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.shuffle-images.js"></script>
+  <style>
+   
+    .main {
+      position: relative;
+    }
+    
+    .shuffle-me {
+      width: 25%;
+      height: 150px;
+      margin: 2%;
+      display: block;
+      position: relative;
+      float: left;
+      width: 26%;
+      height: 209px;
+    }
+
+    .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.35);
+      padding: 20px;
+      text-align: center;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+ 
+    .shuffle-group {
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .shuffle-group .shuffle-me {
+      width: 31.9%;
+      float: left;
+      margin: 5px;
+    }
+
+    .shuffle-group .shuffle-me:first-child {
+      width: 66%;
+      float: left;
+      height: 431px;
+    }
+    .shuffle-group .shuffle-me:first-child h1 {
+      margin-top: 190px;
+      font-size: 30px;
+    }
+
+	</style>
+	<script>
+	  $(document).ready(function(){
+       $(".shuffle-me").shuffleImages({
+         target: ".images > img"
+       });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+
+    	<div class="container"> 
+
+        <div class="shuffle-group">
+          <div data-si-mousemove-trigger="1" class="shuffle-me">
+    	      <div class="images">
+  	          <img src="images/1.jpg">
+  	          <img src="images/2.jpg">
+  	          <img src="images/3.jpg">
+			  <img src="images/4.jpg">
+			  <img src="images/5.jpg">
+  	        </div>
+  	      </div>
+ 
+  	    </div>
+    
+      </div>
+    </div>
+  </div>
+</body>
+</html>
