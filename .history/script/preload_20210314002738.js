@@ -1,0 +1,86 @@
+const pictures = [
+    "content/homepage.png",
+    "content/img01.png",
+   "content/img02.png",
+   "content/img03.png",
+   "content/img04.png",
+   "content/img05.png",
+   "content/img06.png",
+   "content/img07.png",
+   "content/img08.png",
+   "content/img09.png",
+   "content/img10.png",
+   "content/img11.png",
+   "content/img12.png",
+   "content/img13.png",
+   "content/img14.png",
+   "content/img15.png",
+   "content/img16.png",
+   "content/img17.png",
+   "content/img18.png",
+   "content/img19.png",
+   "content/img20.png",
+   "content/img21.png",
+   "content/img22.png",
+   "content/img23.png",
+   "content/img24.png",
+   "content/img25.png",
+   "content/img26.png",
+   "content/img27.png",
+   "content/img28.png",
+   "content/img29.png",
+   "content/img30.png",
+   "content/img31.png",
+   "content/img32.png",
+   "content/img33.png",
+   "content/img34.png",
+   "content/img35.png",
+   "content/img36.png",
+   "content/img37.png",
+   "/content/img38.png",
+   "/content/img39.png",
+   "/content/img40.png",
+   "/content/img41.png",
+   "/content/img42.png",
+   "/content/img43.png",
+   "/content/img44.png",
+   "/content/img44_old.png",
+   "/content/img45.png",
+   "/content/img45_old.png",
+   "/content/img46.png",
+   "/content/img47.png",
+   "/content/img48.png",
+   "/content/img49.png",
+   "/content/img50.png",
+   "/content/img51.png",
+   "/content/img52.png",
+   "/content/img52.jpeg",
+   "/content/img53.png",
+   "/content/img53.jpeg",
+   "/content/img54.png",
+   "/content/img55.png",
+   "/content/img55.jpeg",
+
+   "/content/list-website.mov",
+   "/content/list-website.mp4",
+   "/content/polaroid_me.png",
+   "/content/review-website.mov",
+   "/content/review-website.mp4",
+   "/content/Scans.gif",
+   "/content/Screen Shot 2021-01-23 at 9.28.31 PM.png",
+   "/content/sonic_rupture.gif",
+   "/content/we-need-to-talk-website.mov",
+   "/content/we-need-to-talk-website.mp4"
+  ]
+  
+  var preloadedImages = [];
+  
+  function preload(imageSrcs) {
+    for (var i = 0; i < imageSrcs.length; i++) {
+      var img = new Image();
+      img.src = imageSrcs[i];
+      preloadedImages.push(img);
+    }
+  }
+  
+  preload(pictures)
