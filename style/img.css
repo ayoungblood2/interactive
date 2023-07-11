@@ -1,7 +1,6 @@
 .responsive {
-    max-width: 65%;
-    max-height: 65%;
-    height: auto;
+    max-width: auto;
+    max-height: auto;
   }
 
   @media only screen and (max-width: 600px) {
