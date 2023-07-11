@@ -410,8 +410,8 @@ a:visited {
   audio,
   iframe {
     display: flex;
-    max-height: 75%;
-    max-width: 75%;
+    height: 100vh;
+    width: 100vw;
   }
 
 
