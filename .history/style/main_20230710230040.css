@@ -387,6 +387,7 @@ a:visited {
   p,
   h1,
   h2,
+  a,
   code {
     font-size: 14px;
     font-family: "Inconsolata", monospace;
@@ -402,8 +403,8 @@ a:visited {
     text-indent: -2ch;
   }
   h3{
-    padding-top: 1ch;
-    padding-left: 5.75ch;
+
+    padding-left: 5.5ch;
   }
 
   img,
