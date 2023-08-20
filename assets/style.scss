@@ -248,6 +248,7 @@ p {
     position: absolute;
     left: -60%;
     animation: slideIt 30s linear infinite reverse;
+    white-space: nowrap;
 
     &:hover {
         animation-play-state: paused;
