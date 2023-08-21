@@ -229,15 +229,15 @@ p {
 }
 
 .tickerTape {
-    left: -5%;
+    left: -1%;
     bottom: 0rem;
     position: fixed;
     display: block;
-    width: 190%;
+    width: 101vw;
     background: white;
     z-index: 2;
     box-sizing: border-box;
-    padding: 1rem 0.25rem;
+    // padding: 1rem 0.25rem;
     font-family: inherit;
     overflow: hidden;
     height: 3rem;
@@ -245,16 +245,23 @@ p {
 }
 
 .tickerText {
+    width: inherit;
+    height: inherit;
     position: absolute;
-    left: -60%;
-    animation: slideIt 30s linear infinite reverse;
+    left: 0%;
+    top: 0%;
+    padding: 1rem;
+    // animation: primary 30s linear infinite reverse;
     white-space: nowrap;
 
     &:hover {
         animation-play-state: paused;
-        cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>ಥ</text></svg>") 16 0, auto;
     }
 }
+
+.primary {
+    animation: primary 30s linear infinite;
+  }
 
 .TimeStamp{
     display: block;
