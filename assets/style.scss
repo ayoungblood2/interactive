@@ -237,7 +237,6 @@ p {
     background: white;
     z-index: 2;
     box-sizing: border-box;
-    // padding: 1rem 0.25rem;
     font-family: inherit;
     overflow: hidden;
     height: 3rem;
@@ -251,32 +250,32 @@ p {
     left: 0%;
     top: 0%;
     padding: 1rem;
-    animation: primary 30s linear infinite reverse;
-    white-space: nowrap;
-
-    &:hover {
-        animation-play-state: paused;
-    }
 }
 
-// .primary {
-//     animation: primary 30s linear infinite;
-//   }
+.primary {
+    animation: primary 30s linear infinite;
+  }
+  
+  .secondary {
+    animation: secondary 30s linear infinite;
+  }
 
-.TimeStamp{
-    display: block;
-    flex: 0 0 100%;
-    min-height: 2%;
-    line-height: 1.5;
-    z-index: 1;}
-
-@keyframes slideIt {
+@keyframes primary {
     0% {
-        left: -45%;
+        left: 0%;
     }
 
     100% {
-        left: 57%;
+        left: -100%;
+    }
+}
+
+@keyframes secondary {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
     }
 }
 
