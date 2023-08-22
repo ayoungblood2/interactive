@@ -251,7 +251,7 @@ p {
     left: 0%;
     top: 0%;
     padding: 1rem;
-    // animation: primary 30s linear infinite reverse;
+    animation: primary 30s linear infinite reverse;
     white-space: nowrap;
 
     &:hover {
@@ -259,9 +259,9 @@ p {
     }
 }
 
-.primary {
-    animation: primary 30s linear infinite;
-  }
+// .primary {
+//     animation: primary 30s linear infinite;
+//   }
 
 .TimeStamp{
     display: block;
