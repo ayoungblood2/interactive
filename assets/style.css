@@ -292,18 +292,6 @@ body:not(.mobile) .hover-title:hover+.hover-image {
     opacity: 0;
 }
 
-// .hover-image img {
-//     max-width: 100% !important;
-//     max-height: 100% !important;
-//     width: auto !important;
-//     height: auto !important;
-//     margin-bottom: 0;
-//     position: fixed;
-//     top: 10px;
-//     left: 50%;
-//     transform: translate(-50%);
-// }
-
 .columns {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
