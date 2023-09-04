@@ -51,7 +51,7 @@ a:active {
 @media only screen and (min-width: 1800px) {
     .aboutText {
         padding: 1.25em;
-        max-width: 85vw;
+        max-width: 50vw;
         position: absolute;
         left: 50%;
         top: 50%;
