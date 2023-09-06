@@ -307,6 +307,7 @@ body:not(.mobile) .hover-title:hover+.hover-image {
 
 .columns>div {
     text-align: justify;
+    text-justify: inter-word;
     padding: 3rem 20px;
     border-left: 1px solid black;
 }
