@@ -200,11 +200,6 @@ p {
     column-rule: 1px solid black;
 }
 
-.center-reverse {
-    position: fixed;
-    bottom: 0%;
-    left: 50%;
-}
 .centerHeader {
     position: fixed;
     display: flex;
