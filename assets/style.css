@@ -200,6 +200,16 @@ p {
     column-rule: 1px solid black;
 }
 
+.center-reverse {
+    position: absolute;
+    top: -10%;
+    left: -50%;
+    transform: translate(50%);
+    column-count: 2;
+    column-gap: 40px;
+    column-fill: balance;
+    column-rule: 1px solid black;
+}
 .centerHeader {
     position: fixed;
     display: flex;
