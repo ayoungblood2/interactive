@@ -202,9 +202,9 @@ p {
 
 .center-reverse {
     position: absolute;
-    top: -10%;
-    left: -50%;
-    transform: translate(50%);
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
     column-count: 2;
     column-gap: 40px;
     column-fill: balance;
