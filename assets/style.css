@@ -281,17 +281,13 @@ body:not(.mobile) .hover-title:hover+.hover-image {
 .hover-image {
     display: flex;
     position: fixed;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: -1;
+    z-index: 30;
     pointer-events: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 99vw;
-    height: 99vh;
-    opacity: 0;
+    width: 50vw;
+    height: auto;
 }
 
 .columns {
