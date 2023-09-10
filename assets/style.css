@@ -201,14 +201,9 @@ p {
 }
 
 .center-reverse {
-    position: absolute;
-    bottom: 10%;
+    position: fixed;
+    bottom: 0%;
     left: 50%;
-    transform: translate(-50%);
-    column-count: 2;
-    column-gap: 40px;
-    column-fill: balance;
-    column-rule: 1px solid black;
 }
 .centerHeader {
     position: fixed;
